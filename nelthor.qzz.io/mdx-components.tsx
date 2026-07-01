@@ -1,8 +1,8 @@
+import type { MDXComponents } from 'mdx/types';
+
 const TABLE_CLASS = 'min-w-full border-collapse mb-6 text-sm';
 const TH_CLASS = 'border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-left font-semibold';
 const TD_CLASS = 'border border-[var(--color-border)] px-4 py-2 text-[var(--color-text)]';
-
-import type { MDXComponents } from 'mdx/types';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
