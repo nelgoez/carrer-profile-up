@@ -50,10 +50,10 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
         </Link>
       </div>
 
-      <article className="max-w-2xl">
-        <h1 className="text-3xl font-bold mb-2">{post.frontmatter.title}</h1>
-        <p className="text-sm text-[var(--color-text-muted)] mb-8">{post.frontmatter.date}</p>
-        <div className="prose-custom">
+      <article className="max-w-3xl">
+        <h1 className="text-4xl font-bold mb-3 leading-tight">{post.frontmatter.title}</h1>
+        <p className="text-sm text-[var(--color-text-muted)] mb-10">{post.frontmatter.date}</p>
+        <div className="prose-custom space-y-1">
           <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
         </div>
       </article>

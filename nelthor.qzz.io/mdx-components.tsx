@@ -1,21 +1,25 @@
+const TABLE_CLASS = 'min-w-full border-collapse mb-6 text-sm';
+const TH_CLASS = 'border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-2 text-left font-semibold';
+const TD_CLASS = 'border border-[var(--color-border)] px-4 py-2 text-[var(--color-text)]';
+
 import type { MDXComponents } from 'mdx/types';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => <h1 className="text-3xl font-bold mt-10 mb-4">{children}</h1>,
-    h2: ({ children }) => <h2 className="text-2xl font-bold mt-8 mb-3">{children}</h2>,
-    h3: ({ children }) => <h3 className="text-xl font-semibold mt-6 mb-2">{children}</h3>,
-    p: ({ children }) => <p className="text-[var(--color-text)] mb-4 leading-relaxed">{children}</p>,
-    ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-1 text-[var(--color-text)]">{children}</ul>,
-    ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-1 text-[var(--color-text)]">{children}</ol>,
-    li: ({ children }) => <li className="text-[var(--color-text)]">{children}</li>,
+    h1: ({ children }) => <h1 className="text-3xl font-bold mt-12 mb-6">{children}</h1>,
+    h2: ({ children }) => <h2 className="text-2xl font-bold mt-10 mb-4">{children}</h2>,
+    h3: ({ children }) => <h3 className="text-xl font-semibold mt-8 mb-3">{children}</h3>,
+    p: ({ children }) => <p className="text-[var(--color-text)] mb-5 leading-7">{children}</p>,
+    ul: ({ children }) => <ul className="list-disc pl-6 mb-5 space-y-2 text-[var(--color-text)]">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal pl-6 mb-5 space-y-2 text-[var(--color-text)]">{children}</ol>,
+    li: ({ children }) => <li className="text-[var(--color-text)] leading-7">{children}</li>,
     code: ({ children }) => (
-      <code className="px-1.5 py-0.5 rounded bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">
+      <code className="px-1.5 py-0.5 rounded bg-[#1a1a2e] text-[#e2e8f0] border border-[#2a2a4a] text-sm font-mono">
         {children}
       </code>
     ),
     pre: ({ children }) => (
-      <pre className="p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] overflow-x-auto mb-4 text-sm">
+      <pre className="p-5 rounded-xl bg-[#1a1a2e] border border-[#2a2a4a] overflow-x-auto mb-6 text-sm leading-6 shadow-lg">
         {children}
       </pre>
     ),
@@ -23,11 +27,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <a href={href} className="text-[var(--color-accent)] hover:underline">{children}</a>
     ),
     blockquote: ({ children }) => (
-      <blockquote className="border-l-4 border-[var(--color-accent)] pl-4 my-4 italic text-[var(--color-text-muted)]">
+      <blockquote className="border-l-4 border-[var(--color-accent)] pl-5 my-6 italic text-[var(--color-text-muted)] leading-7">
         {children}
       </blockquote>
     ),
-    hr: () => <hr className="my-8 border-[var(--color-border)]" />,
+    hr: () => <hr className="my-10 border-[var(--color-border)]" />,
+    table: ({ children }) => <table className={TABLE_CLASS}>{children}</table>,
+    th: ({ children }) => <th className={TH_CLASS}>{children}</th>,
+    td: ({ children }) => <td className={TD_CLASS}>{children}</td>,
     ...components,
   };
 }

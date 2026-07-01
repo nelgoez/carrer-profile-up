@@ -113,10 +113,10 @@ function LatestPosts({ posts }: { posts: { title: string, date: string, descript
       <div className="space-y-4">
         {posts.map(post => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <article className="p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors">
-              <div className="text-xs text-[var(--color-text-muted)] mb-1">{post.date}</div>
-              <h3 className="font-semibold mb-1">{post.title}</h3>
-              <p className="text-sm text-[var(--color-text-muted)] line-clamp-2">{post.description}</p>
+            <article className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors">
+              <div className="text-xs text-[var(--color-text-muted)] mb-2">{post.date}</div>
+              <h3 className="font-semibold mb-2">{post.title}</h3>
+              <p className="text-sm text-[var(--color-text-muted)] leading-relaxed line-clamp-2">{post.description}</p>
             </article>
           </Link>
         ))}

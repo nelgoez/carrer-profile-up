@@ -44,10 +44,10 @@ export default function BlogPage() {
         Thoughts on QA engineering, agentic development, and career growth.
       </p>
 
-      <div className="space-y-8">
+      <div className="space-y-6">
         {posts.map(post => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <article className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors">
+            <article className="p-8 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors">
               <div className="text-sm text-[var(--color-text-muted)] mb-2">{post.date}</div>
               <h2 className="text-xl font-semibold mb-3">{post.title}</h2>
               <p className="text-[var(--color-text-muted)] mb-4">{post.description}</p>
