@@ -26,6 +26,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
       - run: bun install
+        working-directory: .
+      - run: bun run generate:media-index
+        working-directory: .
+      - run: bun install
       - run: bun run build
       - uses: actions/upload-pages-artifact@v3
         with:
