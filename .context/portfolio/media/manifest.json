@@ -17,6 +17,27 @@
       "used_in": []
     },
     {
+      "id": "screenshots-CI-workers",
+      "type": "screenshot",
+      "file": "screenshots\\CI-workers.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-coding-session",
+      "type": "screenshot",
+      "file": "screenshots\\coding-session.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-cucumber-code-session",
+      "type": "screenshot",
+      "file": "screenshots\\cucumber-code-session.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
       "id": "screenshots-homepage-hero",
       "type": "screenshot",
       "file": "screenshots\\homepage-hero.png",
