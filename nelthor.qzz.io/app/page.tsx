@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ProjectsSection } from '@/components/projects-section';
 import { Timeline } from '@/components/timeline';
+import './hero-animations.css';
 
 export default function HomePage() {
   return (
@@ -17,10 +18,13 @@ export default function HomePage() {
 
 function Hero() {
   return (
-    <section className="py-20 text-center">
-      <h1 className="text-5xl font-bold mb-4">Nahuel Gomez</h1>
+    <section className="py-20 text-center hero-fade-in">
+      <div className="hero-name-wrapper">
+        <div className="hero-glow" />
+        <h1 className="text-5xl font-bold mb-4">Nahuel Gomez</h1>
+      </div>
       <p className="text-xl text-[var(--color-text-muted)] mb-6">
-        SDET → Agentic QA Engineer &middot; Backend Dev &middot; TypeScript &amp; Python
+        <span className="tagline-cursor">SDET → Agentic QA Engineer &middot; Backend Dev &middot; TypeScript &amp; Python</span>
       </p>
       <p className="max-w-2xl mx-auto text-[var(--color-text-muted)]">
         5+ years building test automation frameworks at Newfold Digital.
