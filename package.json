@@ -9,6 +9,7 @@
     "env": "set -a; source .env; set +a",
     "format:check": "prettier --check '**/*.{json,yml,yaml,css,scss,html}' --ignore-path .prettierignore",
     "format:fix": "prettier --write '**/*.{json,yml,yaml,css,scss,html}' --ignore-path .prettierignore",
+    "generate:media-index": "bun scripts/build-media-index.ts",
     "generate:readme": "bun scripts/generate-readme.ts",
     "health:check": "bun scripts/health/run-all.ts",
     "health:assets": "bun scripts/health/check-assets.ts",

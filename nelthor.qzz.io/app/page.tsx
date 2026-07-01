@@ -46,12 +46,15 @@ function Hero() {
         Specializing in agentic QA engineering — intelligent systems that work alongside AI agents.
       </p>
       <div className="flex gap-4 justify-center mt-8">
-        <Link href="/projects" className="px-6 py-2 rounded-lg bg-[var(--color-accent-strong)] text-white font-semibold hover:opacity-90 shadow-sm">
-          View Projects
-        </Link>
-        <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border border-[var(--color-accent-strong)] text-[var(--color-accent-strong)] font-medium hover:opacity-80">
-          Contact
-        </a>
+          <Link href="/projects" className="px-6 py-2 rounded-lg bg-[var(--color-accent-strong)] text-white font-semibold hover:opacity-90 shadow-sm">
+            View Projects
+          </Link>
+          <a href="/cv.pdf" className="px-6 py-2 rounded-lg bg-[var(--color-accent)] text-white font-semibold hover:opacity-90 shadow-sm">
+            Download CV
+          </a>
+          <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border border-[var(--color-accent-strong)] text-[var(--color-accent-strong)] font-medium hover:opacity-80">
+            Contact
+          </a>
       </div>
     </section>
   );

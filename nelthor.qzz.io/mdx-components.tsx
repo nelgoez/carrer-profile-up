@@ -35,6 +35,18 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     table: ({ children }) => <table className={TABLE_CLASS}>{children}</table>,
     th: ({ children }) => <th className={TH_CLASS}>{children}</th>,
     td: ({ children }) => <td className={TD_CLASS}>{children}</td>,
+    img: ({ src, alt, title }) => (
+      <figure className="my-6">
+        <img src={src} alt={alt ?? ''} title={title} className="w-full rounded-xl border border-[var(--color-border)]" loading="lazy" />
+        {alt && <figcaption className="text-xs text-center text-[var(--color-text-muted)] mt-2">{alt}</figcaption>}
+      </figure>
+    ),
+    video: ({ src, title, controls, poster }) => (
+      <figure className="my-6">
+        <video src={src} title={title} controls={controls ?? true} poster={poster} className="w-full rounded-xl border border-[var(--color-border)]" />
+        {title && <figcaption className="text-xs text-center text-[var(--color-text-muted)] mt-2">{title}</figcaption>}
+      </figure>
+    ),
     ...components,
   };
 }

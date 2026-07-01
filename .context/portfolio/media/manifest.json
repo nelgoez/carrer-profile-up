@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "updated": "2026-07-01",
+  "assets": [
+    {
+      "id": "architecture-evolution",
+      "type": "diagram",
+      "file": "diagrams/architecture.svg",
+      "alt_text": "Architecture diagram comparing Traditional SDET and Agentic QA pipelines",
+      "used_in": ["behind-the-scenes", "blog/how-i-built-this-portfolio"]
+    },
+    {
+      "id": "og-social-card",
+      "type": "screenshot",
+      "file": "screenshots/og-social-card.png",
+      "alt_text": "Open Graph social card for nelthor.qzz.io",
+      "used_in": ["meta"]
+    },
+    {
+      "id": "homepage-hero",
+      "type": "screenshot",
+      "file": "screenshots/homepage-hero.png",
+      "alt_text": "Homepage hero section with name, tagline, and CTAs",
+      "used_in": ["home"]
+    },
+    {
+      "id": "blog-listing",
+      "type": "screenshot",
+      "file": "screenshots/blog-listing.png",
+      "alt_text": "Blog listing page showing all 5 posts",
+      "used_in": ["blog"]
+    },
+    {
+      "id": "behind-the-scenes-table",
+      "type": "screenshot",
+      "file": "screenshots/behind-the-scenes-table.png",
+      "alt_text": "Behind the Scenes page with Traditional vs Agentic comparison table",
+      "used_in": ["behind-the-scenes"]
+    },
+    {
+      "id": "projects-github-api",
+      "type": "screenshot",
+      "file": "screenshots/projects-github-api.png",
+      "alt_text": "Projects page showing repos fetched from GitHub API",
+      "used_in": ["projects"]
+    }
+  ]
+}

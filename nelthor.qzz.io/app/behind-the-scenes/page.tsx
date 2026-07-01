@@ -128,6 +128,40 @@ export default function BehindTheScenesPage() {
       </section>
 
       <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6">Media Gallery</h2>
+        <p className="text-[var(--color-text-muted)] mb-8">
+          Screenshots, diagrams, and recordings showing the tools and workflows in action.
+          More assets coming soon — terminal recordings, video walkthroughs, and Allure reports.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+            <div className="aspect-video rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] text-sm mb-3">
+              📸 Screenshot — Homepage Hero
+            </div>
+            <p className="text-xs text-[var(--color-text-muted)]">Homepage with hero, skills grid, and experience timeline</p>
+          </div>
+          <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+            <div className="aspect-video rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] text-sm mb-3">
+              📸 Screenshot — Blog Listing
+            </div>
+            <p className="text-xs text-[var(--color-text-muted)]">Blog listing with all 5 MDX-powered posts</p>
+          </div>
+          <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+            <div className="aspect-video rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] text-sm mb-3">
+              🎥 Recording — Agentic Dev Session (coming soon)
+            </div>
+            <p className="text-xs text-[var(--color-text-muted)]">Terminal recording of a sprint-development workflow in action</p>
+          </div>
+          <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
+            <div className="aspect-video rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] text-sm mb-3">
+              📊 Diagram — Architecture Evolution
+            </div>
+            <p className="text-xs text-[var(--color-text-muted)]">Traditional SDET vs Agentic QA pipeline comparison</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">This Portfolio — Built with Agentic Workflows</h2>
         <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
           <p className="text-[var(--color-text-muted)] mb-4">
