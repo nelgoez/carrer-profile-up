@@ -70,14 +70,38 @@ export default function CVPage() {
             <p className="text-sm text-[var(--color-accent)] font-medium mb-3">Software Development Engineer in Test II (SDET II) — Mar 2022 – Present</p>
             <p className="text-sm text-[var(--color-text-muted)] mb-2 italic">Global leader in web hosting — Bluehost, HostGator, Domain.com, Network Solutions</p>
             <ul className="space-y-2 text-sm text-[var(--color-text)]">
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Led migration of a 600+ case legacy suite from WebdriverIO/TypeScript → Robot Framework/Python, cutting regression time by 35%.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Integrated automated test suites into Jenkins CI/CD pipelines, enabling true shift-left quality.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Designed comprehensive test plans for complex SaaS web apps serving millions of users.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Mentored 20+ students, achieving a 90% course completion rate through structured QA automation coaching.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Developed 10 automated test scripts that boosted coverage by 60% across critical business flows.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Led cost-efficient infrastructure migration, reducing server costs by 20%.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Performed API testing across REST, middleware, and microservice layers — validating contracts, auth flows, and integrations using Postman and automated suites.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Tested modern frontend apps built with React and Angular, plus WordPress CMS platforms — covering component, integration, and E2E journeys.</li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Led migration of a 600+ case legacy suite from WebdriverIO/TypeScript → Robot Framework/Python, cutting regression time by 35%.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Integrated automated test suites into Jenkins CI/CD pipelines, enabling true shift-left quality.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Designed comprehensive test plans for complex SaaS web apps serving millions of users.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Mentored 20+ students, achieving a 90% course completion rate through structured QA automation coaching.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Developed 10 automated test scripts that boosted coverage by 60% across critical business flows.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Led cost-efficient infrastructure migration, reducing server costs by 20%.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Performed API testing across REST, middleware, and microservice layers — validating contracts, auth flows, and integrations using Postman and automated suites.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Tested modern frontend apps built with React and Angular, plus WordPress CMS platforms — covering component, integration, and E2E journeys.
+              </li>
             </ul>
           </div>
 
@@ -93,8 +117,14 @@ export default function CVPage() {
             <p className="text-sm text-[var(--color-text-muted)] mb-1">Argentina (Academic)</p>
             <p className="text-sm text-[var(--color-accent)] font-medium mb-2">Full Stack Web Developer — Apr 2021 – Jun 2021</p>
             <ul className="space-y-2 text-sm text-[var(--color-text)]">
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Built a healthcare management system with React, Redux, Node.js, Supabase, Firebase — serving patients, doctors, and admin staff with role-based access and Material UI.</li>
-              <li className="flex gap-2"><span className="text-[var(--color-accent)] mt-1">▸</span>Developed a single-page weather app consuming a global climate API — first end-to-end frontend project in React.</li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Built a healthcare management system with React, Redux, Node.js, Supabase, Firebase — serving patients, doctors, and admin staff with role-based access and Material UI.
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[var(--color-accent)] mt-1">▸</span>
+                Developed a single-page weather app consuming a global climate API — first end-to-end frontend project in React.
+              </li>
             </ul>
           </div>
         </section>

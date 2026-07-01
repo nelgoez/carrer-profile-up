@@ -49,7 +49,7 @@ function Hero() {
         <Link href="/projects" className="px-6 py-2 rounded-lg bg-[var(--color-accent-strong)] text-white font-semibold hover:opacity-90 shadow-sm">
           View Projects
         </Link>
-                  <a href="/cv" className="px-6 py-2 rounded-lg bg-[var(--color-accent-strong)] text-white font-semibold hover:opacity-90 shadow-sm">
+        <a href="/cv" className="px-6 py-2 rounded-lg bg-[var(--color-accent-strong)] text-white font-semibold hover:opacity-90 shadow-sm">
           Download CV
         </a>
         <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border border-[var(--color-accent)] text-[var(--color-accent)] font-medium hover:opacity-80">
