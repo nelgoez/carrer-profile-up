@@ -13,6 +13,8 @@ export default antfu({
   ignores: [
     'node_modules',
     'dist',
+    '**/out/**',
+    '**/.next/**',
     'test-results',
     'playwright-report',
     'allure-results',

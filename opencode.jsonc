@@ -110,7 +110,6 @@
       "jq *": "allow",
       "curl *": "allow",
 
-      "acli *": "allow",
       "resend *": "allow",
       "supabase *": "allow",
 

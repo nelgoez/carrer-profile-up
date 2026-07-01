@@ -8,23 +8,23 @@
 # Each downstream project that uses this starter must fill in the real values.
 
 project:
-  project_name: null # TODO: fill per project — Project name (e.g. MyProject)
-  project_key: null # TODO: fill per project — Project key in issue tracker (e.g. PROJ, OB, UPEX)
-  webapp_domain: null # TODO: fill per project — Domain of the web application under test (e.g. myproject.com)
+  project_name: Carrer Profile Up
+  project_key: CP
+  webapp_domain: nelgoez.github.io/carrer-profile-up
 
 backend:
-  backend_repo: null # TODO: fill per project — Relative path to backend repository (e.g. ../my-backend)
-  backend_stack: null # TODO: fill per project — Backend technology stack (e.g. Node.js + Express)
-  backend_entry: null # TODO: fill per project — Backend source entry point (e.g. src/)
+  backend_repo: ''
+  backend_stack: Bun + TypeScript (scripts/tooling)
+  backend_entry: scripts/
 
 frontend:
-  frontend_repo: null # TODO: fill per project — Relative path to frontend repository (e.g. ../my-frontend)
-  frontend_stack: null # TODO: fill per project — Frontend technology stack (e.g. React + TypeScript)
-  frontend_entry: null # TODO: fill per project — Frontend source entry point (e.g. src/)
-  design_md_path: null # OPTIONAL — path to DESIGN.md produced by /design-system. Defaults to ./DESIGN.md when null. Override only for atypical layouts (e.g. .context/DESIGN.md).
+  frontend_repo: nelthor.qzz.io
+  frontend_stack: Next.js 15 + Tailwind CSS 4 + TypeScript
+  frontend_entry: nelthor.qzz.io/app/
+  design_md_path: null
 
 database:
-  db_type: null # TODO: fill per project — Database engine (e.g. PostgreSQL)
+  db_type: PostgreSQL (Supabase)
 
 issue_tracker:
   issue_tracker: null # TODO: fill per project — Issue tracking tool (e.g. Jira)
@@ -32,7 +32,7 @@ issue_tracker:
   atlassian_url: null # TODO: fill per project — Atlassian instance base URL (e.g. https://company.atlassian.net). The acli `--site` slug is derived from this (strip `https://`); no separate ATLASSIAN_SITE variable.
 
 testing:
-  default_env: null # TODO: fill per project — Default working environment — must match a key under `environments:` (e.g. staging)
+  default_env: local
 
 # Git workflow for THIS project — the SOURCE OF TRUTH read by the git-flow-master skill
 # before any git/gh operation. Ships `null` (template): on the first git intent git-flow-master
@@ -84,10 +84,14 @@ external_consumers:
 # For explicit cross-env references use {{environments.<env>.<var>}} (e.g. {{environments.local.web_url}}).
 environments:
   local:
-    web_url: null # TODO: fill per project — Frontend URL for local env (e.g. http://localhost:3000)
-    api_url: null # TODO: fill per project — API base URL for local env (e.g. http://localhost:3000/api)
-    db_project_ref: null # TODO: fill per project — Supabase project ref for local (e.g. czuusjchqpgvanvbdrnz — visible in your Supabase dashboard URL)
+    web_url: http://localhost:3000
+    api_url: http://localhost:3000/api
+    db_project_ref: null
   staging:
-    web_url: null # TODO: fill per project — Frontend URL for staging env (e.g. https://staging.myproject.com)
-    api_url: null # TODO: fill per project — API base URL for staging env (e.g. https://api-staging.myproject.com)
-    db_project_ref: null # TODO: fill per project — Supabase project ref for staging (e.g. czuusjchqpgvanvbdrnz — visible in your Supabase dashboard URL)
+    web_url: null
+    api_url: null
+    db_project_ref: null
+  production:
+    web_url: https://nelgoez.github.io/carrer-profile-up
+    api_url: null
+    db_project_ref: null

@@ -1,6 +1,11 @@
 # CLAUDE.md — AI Persistent Memory
 
 > AI memory. Loads EVERY session. Heavy detail → skill `references/`. Project values → `.agents/project.yaml`. Scripts → READ `package.json`.
+>
+> **Project path**: `D:\Nahuel\Proyectos\carrer-profile-up`
+> **Portfolio domain**: `nelthor.qzz.io`
+> **GitHub handle**: `nelgoez`
+> **Session log**: `.session/sprint-development/startup.md`
 
 ---
 
@@ -71,6 +76,8 @@ Example (same work, different register):
 
 **VISUAL MAPPING BIAS.** When content is naturally mappable, prefer visual representation over paragraph of prose. Humans process structured visuals faster than narrative for comparisons, hierarchies, flows, and impact maps. AI decides per-response whether visual materially aids comprehension — visual should REPLACE prose, not decorate alongside it. Composes with other strategies: Caveman compresses words, Butler controls granularity, PM Voice controls register, Visual Mapping controls form.
 
+**AUTONOMOUS MODE — GATE BYPASS REGISTER.** When `autonomous ≠ off`, the orchestrator skips human checkpoints per the gate bypass policy. This is a **behavioral register** (like caveman, PM Voice, Butler) — it controls WHEN the AI blocks, not WHAT the AI does. See §13 + `agentic-dev-core/references/autonomous-gates.md`.
+
 - **Types to reach for**:
   - **Tables** (`| col | col |`) — comparisons (A vs B, before / after), key/value mappings (old name → new name), counts and metrics
   - **ASCII flow diagrams** (`A ──→ B ──→ C`) — sequences, pipelines, propagation paths
@@ -133,15 +140,14 @@ Example (same work, different register):
 | Foundational definition (PRD/SRS/Discovery) | "define el PRD", "ideando un nuevo producto"                                                    | `/project-foundation`                              | `business/`, `PRD/`, `SRS/`                                     | Read + Write                                 |
 | Design system (DESIGN.md)                   | "definir design system", "rebrandear el proyecto"                                               | `/design-system`                                   | `business/business-model.md`, `PRD/`                            | Write                                        |
 | Infra scaffolding (backend/frontend)        | "scaffolding del proyecto", "API routes setup"                                                  | `/project-bootstrap`                               | `SRS/infrastructure.md`, `DESIGN.md`                            | Code edit                                    |
-| QA testability page + credentials artifact  | "create QA guide page", "guía de testeabilidad", "credenciales para testing", "update /qa page" | `/testability-guide`                               | `app/qa/page.tsx` snapshot, `.agents/project.yaml`, `.mcp.json` | Read + Write + `[ISSUE_TRACKER_TOOL]`        |
-| Backlog / story refinement                  | "create epic", "refine acceptance criteria"                                                     | `/product-management`                              | `.context/PBI/epic-tree.md`, `PRD/`, `business/domain-glossary.md` | `[ISSUE_TRACKER_TOOL]`                       |
-| Sprint-development ticket                   | "implementar esta historia", "trabajar UPEX-XXX"                                                | `/sprint-development`                              | `.context/PBI/epics/EPIC-*/stories/STORY-*/`, `business/domain-glossary.md`, `DESIGN.md` + `.context/design/master-design-plan.md` (UI stories — Rule 14) | `[ISSUE_TRACKER_TOOL]` + `[AUTOMATION_TOOL]` |
+| QA testability page + credentials artifact  | "create QA guide page", "guía de testeabilidad", "credenciales para testing", "update /qa page" | `/testability-guide`                               | `app/qa/page.tsx` snapshot, `.agents/project.yaml`, `.mcp.json` | Read + Write                                  |
+| Backlog / story refinement                  | "create epic", "refine acceptance criteria"                                                     | `/product-management`                              | `.context/PBI/epic-tree.md`, `PRD/`, `business/domain-glossary.md` | Edit                                          |
+| Sprint-development ticket                   | "implementar esta historia", "trabajar UPEX-XXX"                                                | `/sprint-development`                              | `.context/PBI/epics/EPIC-*/stories/STORY-*/`, `business/domain-glossary.md`, `DESIGN.md` + `.context/design/master-design-plan.md` (UI stories — Rule 14) | `[AUTOMATION_TOOL]`                            |
 | TDD slice / unit tests                      | "write unit tests", "TDD this function"                                                         | `/unit-testing`                                    | function under test, existing tests                             | Code edit                                    |
 | Sync AI memory                              | "sync memory", `/sync-ai-memory`                                                                | `/sync-ai-memory`                                  | `README.md`, this file, `.context/`, `package.json`             | Edit                                         |
 | Business map refresh                        | "refresh data map", `/business-*-map`                                                           | `/business-data-map` / `-feature-map` / `-api-map` | Supabase schema, backend code, PRD                              | Read + Write                                 |
 | Git / PR work                               | any git intent                                                                                  | `/git-flow-master` (auto)                          | `git status`, `git log`                                         | `git` + `gh`                                 |
-| Browser action                              | "screenshot", "trace", "record"                                                                 | `/playwright-cli`                                  | —                                                               | Playwright CLI                               |
-| Jira operation                              | "Jira issue", "transition story"                                                                | `/acli`                                            | `.agents/jira-required.yaml`, `.agents/jira-fields.json`        | CLI                                          |
+| Browser action                              | "screenshot", "trace", "record"                                                                 | `/playwright-cli`                               | —                                                               | Playwright CLI                               |
 
 **Key paths**:
 
@@ -156,7 +162,7 @@ Example (same work, different register):
 - `.context/PBI/epics/EPIC-<KEY>-<slug>/` — epic-level (epic.md [SYNC], feature-implementation-plan.md / feature-test-plan.md [SYNC], stories/)
 - `.context/PBI/epics/EPIC-*/stories/STORY-<KEY>-<slug>/` — story-level (story.md + per-field [SYNC], context.md, evidence/)
 - `.agents/project.yaml` — `{{VAR}}` source-of-truth (load ONCE per session, cache)
-- `.agents/jira-fields.json` · `jira-workflows.json` · `jira-required.yaml` — Jira catalogs
+- (Jira/Atlassian catalogs not configured — this project is local-first)
 
 ---
 
@@ -167,16 +173,15 @@ Example (same work, different register):
 | Skill                 | Trigger                       | Purpose                                                                                                                                                                                                                                                                                |
 | --------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `agentic-dev-core`    | (auto, cited by other skills) | Passive reference host for shared doctrine (briefing template, dispatch patterns, orchestration, skill-composition strategy, behavioral layer, model routing, skill resolver, topic-key conventions, TypeScript patterns). Loaded on demand by workflow skills — not invoked directly. |
-| `agentic-dev-onboard` | `/agentic-dev-onboard`        | First-time orientation. Stack + Jira workflow + skill map + MCPs.                                                                                                                                                                                                                      |
+| `agentic-dev-onboard` | `/agentic-dev-onboard`        | First-time orientation. Stack + skill map + MCPs.                                                                                                                                                                                                                      |
 | `project-foundation`  | `/project-foundation`         | Constitution + Architecture (PRD/SRS) + Discovery (data/api/dev-guide).                                                                                                                                                                                                                |
 | `design-system`       | `/design-system`              | DESIGN.md (Google Labs spec) — 5 paths. Pre-scaffolding visual contract.                                                                                                                                                                                                               |
 | `project-bootstrap`   | `/project-bootstrap`          | Infra scaffolding: backend, frontend, OpenAPI, auth, env, Supabase types.                                                                                                                                                                                                              |
-| `testability-guide`   | `/testability-guide`          | Generates in-app `/qa` page ("Software Testability Guide for QA") + tool-agnostic credentials artifact (Jira Epic default / Confluence / Notion / MCP / CLI / manual paste). Idempotent re-runs via snapshot-comment drift detection.                                                  |
+| `testability-guide`   | `/testability-guide`          | Generates in-app `/qa` page ("Software Testability Guide for QA") + tool-agnostic credentials artifact. Idempotent re-runs via snapshot-comment drift detection.                                                  |
 | `product-management`  | `/product-management`         | Backlog seed + epic + INVEST/AC refinement + sprint report.                                                                                                                                                                                                                            |
 | `sprint-development`  | `/sprint-development`         | **Mega-orchestrator**. Per-story Plan → Implement → Review → Staging → Prod (gated).                                                                                                                                                                                                   |
 | `unit-testing`        | `/unit-testing`               | TDD red-green-refactor, mocking, coverage. Composable with `/sprint-development`.                                                                                                                                                                                                      |
 | `git-flow-master`     | (auto on git/PR intents)      | End-to-end Git operator. Auto-detects branching strategy.                                                                                                                                                                                                                              |
-| `acli`                | `/acli`                       | Atlassian CLI cookbook (Jira + Confluence). Resolves `[ISSUE_TRACKER_TOOL]`.                                                                                                                                                                                                           |
 | `vercel-cli`          | (auto on `vercel` Bash calls) | Vercel CLI cookbook: deployment verification (poll commit SHA + `inspect --wait`), env var sync (`.env` ↔ Preview/Production scopes), build/runtime log streaming, rollback, `.vercel/` linking. Companion to community `/deploy-to-vercel`.                                          |
 
 > **Persistent memory** — `bun run setup` installs Engram via `gentle-ai install --preset minimal`. Active across sessions and compactions per §12 (proactive memory triggers). No other gentle-ai skills are installed.
@@ -215,8 +220,8 @@ Example (same work, different register):
 
 | Tag                     | Domain                            | Primary                                   | Fallback                               |
 | ----------------------- | --------------------------------- | ----------------------------------------- | -------------------------------------- |
-| `[ISSUE_TRACKER_TOOL]`  | Jira Cloud (story/bug/epic)       | `/acli`                                   | MCP Atlassian (opt-in — see docs/mcp/) |
-| `[KNOWLEDGE_BASE_TOOL]` | Confluence (knowledge base/docs)  | `/acli` (Confluence subcommands)          | MCP Atlassian (opt-in — see docs/mcp/) |
+| `[ISSUE_TRACKER_TOOL]`  | Issue tracking (optional)         | Not configured — use local `.context/PBI/` | —                      |
+| `[KNOWLEDGE_BASE_TOOL]` | Knowledge base (optional)         | Not configured (no Confluence) | — |
 | `[AUTOMATION_TOOL]`     | Browser automation                | `/playwright-cli`                         | MCP Playwright                         |
 | `[DB_TOOL]`             | Database                          | Supabase MCP                              | raw SQL via Supabase CLI               |
 | `[API_TOOL]`            | API exploration                   | curl + OpenAPI types (`bun run api:sync`) | Postman manual                         |
@@ -283,40 +288,27 @@ Project values live in **`.agents/project.yaml`** — load once per session. NEV
 
 ## 9. LOCAL CONTEXT (PBI)
 
-> **`.context/PBI/` layout is OWNED by `scripts/sync-jira-issues.ts`.** Module = Epic (1:1). Jira is the source of truth; local `.md` files are a **read-only cache**. NEVER hand-write a Jira-mirrored file — author the plan/content, push it to the Jira field (or fallback), then run the sync. Dev-authored NON-Jira files live INSIDE the same folders.
+> **`.context/PBI/` is local-first.** Epics and Stories are authored directly in markdown by `/product-management` and consumed by `/sprint-development`. No external sync — git is the source of truth.
 
-**Canonical tree** (Epic-centric; `<KEY>` = Jira key, `<slug>` from summary):
+**Canonical tree**:
 
 ```
 .context/PBI/
-  epic-tree.md                                   [SYNC] master index
-  epics/EPIC-<KEY>-<slug>/
-    epic.md                                       [SYNC]
-    feature-implementation-plan.md                [SYNC ← Jira field / stub]
-    feature-test-plan.md                          [SYNC ← Jira field / stub]
-    stories/STORY-<KEY>-<slug>/
-      story.md                                    [SYNC]
-      acceptance-criteria.md  scope.md  out-of-scope.md  business-rules.md  workflow.md
-      implementation-plan.md                      [SYNC ← Jira `spec_implementation_plan` / stub]
-      comments.md                                 [SYNC, --include-comments]
-      context.md  progress.md  evidence/          [dev — non-Jira, OK]
-  bugs/ defects/ improvements/ tests/             [SYNC — standalone issue types]
-  test-plans/ test-executions/ test-sets/ preconditions/   [SYNC — Xray container issues (jira-xray); description holds the ATP/ATR body]
+  epic-tree.md                    master index of all epics
+  epics/<SLUG>/
+    epic.md                        epic definition
+    stories/<SLUG>/
+      story.md                     story definition + acceptance criteria
+      implementation-plan.md       written by /sprint-development Stage 0
+      context.md  progress.md      dev-authored state
+      evidence/                    screenshots, logs, artifacts
 ```
 
-**`[SYNC]` files = forbidden to hand-write** (overwritten on every sync — NO file is hard-protected; Jira is the source of truth). The dev/feature implementation plan is authored, **pushed to its Jira field** (`spec_implementation_plan` / `feature_implementation_plan`), then read back from the synced `implementation-plan.md` / `feature-implementation-plan.md`. **Rule of thumb**: file mirrors a Jira field → read the synced copy, never author it locally. File holds info NOT in Jira (session notes, progress, roadmaps, evidence) → author locally as usual.
+**Authorship**: all files are hand-written by skills or manually. No `[SYNC]` markers, no script overwrites. `/product-management` creates epics/stories. `/sprint-development` writes implementation plans. Context and progress are dev-authored.
 
-> Sprint-level cross-ticket aggregate → `.context/reports/SPRINT-{N}-DEVELOPMENT.md` (generated by `/sprint-development` batch). Lifecycle → `.context/reports/README.md`.
+**ENTRY POINT**: invoke `/sprint-development` — loads the story folder, explains scope, drives plan → code → review → deploy.
 
-**DETAILED READS via the script** (replaces `acli view` for custom fields — `acli view` returns null for custom fields):
-- `bun run jira:sync-issues get <KEY> --include-comments` → one issue, ALL custom fields + comments → read the generated `.md`.
-- `bun run jira:sync-issues jql "<query>"` → batch. `pull --epic <KEY>` / `--story <KEY>` → scoped.
-
-**FALLBACK**: if a custom field a prompt must fill is absent from the instance, write the content as a structured Jira comment (`## <label>`) per `.agents/jira-required.yaml` → `fallback:`. The sync then emits a pointer stub for that field's `.md`. Never block on a missing field.
-
-**ENTRY POINT**: invoke `/sprint-development` — syncs the ticket (`jira:sync-issues get`), explains story, loads the synced PBI, drives plan → code → review → deploy.
-
-**RESUME SESSION**: `/sprint-development` Phase 0 resume contract — reads `.session/sprint-development/<JIRA-KEY>/progress.md` (per `.claude/skills/agentic-dev-core/references/session-management.md`), surfaces last completed phase, offers resume / restart / abort; the synced story folder + engram supply the content context.
+**RESUME SESSION**: `/sprint-development` Phase 0 resume contract — reads `.session/sprint-development/<scope>/progress.md` (per `agentic-dev-core/references/session-management.md`), surfaces last completed phase, offers resume / restart / abort.
 
 ---
 
@@ -384,4 +376,33 @@ Engram MCP configured. Call `mem_save` IMMEDIATELY (no user prompt needed) after
 - **Non-obvious discovery, gotcha, or edge case** found.
 - **Session close** — MANDATORY `mem_session_summary` before saying "done" / "listo".
 
-Self-check after every task: _did I make decision, fix bug, learn something non-obvious, or establish convention? If yes → `mem_save` NOW._
+Self-check after every task: _did I make decision, fix bug, learn something non-obvious, or establish convention? If yes → `mem_save` NOW.
+
+---
+
+## 13. AUTONOMOUS MODE — GATE BYPASS POLICY
+
+**Three levels**: `off` (default), `semi`, `full`. Set inline `/autonomous <level>` (see AGENTS.md).
+
+- `off` = all checkpoints fire, every WAIT blocks.
+- `semi` = scope/pick/plan approved upfront via permission manifest; per-phase WAITs still fire.
+- `full` = only HARD gates surface.
+
+**When `autonomous ≠ off`**: BEFORE any workflow skill execution, generate a permission manifest (template at `agentic-dev-core/references/permission-manifest-template.md`), present to user, WAIT for OK. Then execute with gate bypass per `agentic-dev-core/references/autonomous-gates.md`.
+
+**HARD gates NEVER auto-approve**: T4 skill load, subagent TOOL_FAILURE, env dead/unreachable, security/auth finding recalibration, git push to main/force push, credential missing, staging env dead, production deploy gate, Jira write (new issues), credentials artifact publish.
+
+**Subagent dispatch patterns UNCHANGED** — autonomous mode affects only orchestrator (main thread) blocking at checkpoints.
+
+**Gate resolution**: at each checkpoint, cross-reference `autonomous-gates.md` table → mode column → HARD/Block/Ask/Auto.
+
+**Permission manifest (mandatory pre-flight)**: when `autonomous ≠ off`, BEFORE any skill execution, generate a permission manifest per `permission-manifest-template.md`, present to user, WAIT for OK. Never auto-start without manifest approval.
+
+**Session management composition**: auto-resume + auto-archive per `agentic-dev-core/references/session-management.md` §§4+8.
+
+**User preference overrides**: `~/.config/opencode/instructions/autonomous-preferences.md`. Format:
+```markdown
+## Gate overrides
+- G-SD-06 (impl checkpoint): auto_approve
+- G-CC-05 (push to main): keep_hard
+```_
