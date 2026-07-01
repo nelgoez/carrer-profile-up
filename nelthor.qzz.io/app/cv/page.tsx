@@ -135,6 +135,7 @@ export default function CVPage() {
             <div className="p-4 rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)]">
               <h3 className="font-semibold text-sm">Full Stack Web Development</h3>
               <p className="text-sm text-[var(--color-text-muted)]">Henry Bootcamp • 2021</p>
+              <p className="text-xs mt-1"><a href="/certificates/henry-full-stack.pdf" target="_blank" className="text-[var(--color-accent)]">View Certificate (PDF)</a></p>
             </div>
             <div className="p-4 rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)]">
               <h3 className="font-semibold text-sm">EF SET English Certificate</h3>
