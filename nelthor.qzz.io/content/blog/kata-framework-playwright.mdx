@@ -1,0 +1,87 @@
+---
+title: 'Building a KATA Framework with Playwright'
+date: '2026-06-20'
+description: 'Step-by-step tutorial on implementing Component Action Test Architecture with Playwright and TypeScript.'
+tags: ['Tutorial', 'Playwright', 'KATA']
+---
+
+Most test frameworks fail because of architecture, not tools.
+
+After building automation at scale for 5+ years, the pattern that consistently works is the **KATA (Knowledge-Augmented Test Automation)** framework: a three-layer architecture designed for both human and AI collaboration.
+
+## The 3-Layer Pattern
+
+| Layer | Name | Purpose | Owner |
+|-------|------|---------|-------|
+| 1 | Component | What you test — page objects, API clients, UI components | Dev |
+| 2 | Action | How you interact — reusable interaction patterns | Framework |
+| 3 | Test | What you assert — scenarios and assertions | AI + Human |
+
+## Layer 1: Components
+
+Components encapsulate what exists in the system under test. They're the thinnest layer — just enough structure to identify elements and endpoints:
+
+```typescript
+// Component layer — pure page objects
+export class LoginPage {
+  readonly emailInput = page.getByLabel('Email')
+  readonly passwordInput = page.getByLabel('Password')
+  readonly submitButton = page.getByRole('button', { name: 'Sign in' })
+
+  async goto() { await page.goto('/login') }
+}
+```
+
+## Layer 2: Actions
+
+Actions compose components into user-meaningful operations. This is where business logic lives:
+
+```typescript
+// Action layer — reusable business flows
+export class AuthActions {
+  constructor(private login: LoginPage) {}
+
+  async loginAs(email: string, password: string) {
+    await this.login.goto()
+    await this.login.emailInput.fill(email)
+    await this.login.passwordInput.fill(password)
+    await this.login.submitButton.click()
+    await expect(page.getByText('Dashboard')).toBeVisible()
+  }
+}
+```
+
+## Layer 3: Tests
+
+Tests are the thinnest layer — pure intent, minimal implementation detail. This is where AI-generated assertions fit naturally:
+
+```typescript
+// Test layer — intent-driven
+test('user can sign in with valid credentials', async () => {
+  const auth = new AuthActions(new LoginPage(page))
+  await auth.loginAs('user@example.com', 'valid-password')
+  await expect(page).toHaveURL(/dashboard/)
+})
+```
+
+## Why KATA Works for AI Collaboration
+
+The architecture is designed so AI can contribute at any layer without breaking the others:
+
+- **AI generates Layer 3 tests** from natural language: "test that a user can sign in" → the test above
+- **AI suggests Layer 2 actions** from analyzing user flows
+- **Human owns Layer 1 components** — element selectors require visual verification
+
+The abstraction layers mean the AI can generate meaningful test scenarios without needing to know the exact DOM structure. And the human can update a component selector without breaking any tests.
+
+## Running It
+
+```bash
+npx playwright test
+```
+
+That's it. The framework handles parallel execution, reporting, and retries. KATA handles the maintainability.
+
+## Learn More
+
+The full KATA implementation is in **[bunkai-qa-engineering](https://github.com/nelgoez/bunkai-qa-engineering)** — my open-source agentic QA platform. More details in an upcoming deep-dive.

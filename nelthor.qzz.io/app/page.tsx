@@ -1,15 +1,30 @@
 import Link from 'next/link';
 import { ProjectsSection } from '@/components/projects-section';
 import { Timeline } from '@/components/timeline';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import './hero-animations.css';
 
+function getLatestPosts(count = 3) {
+  const dir = path.join(process.cwd(), 'content/blog');
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter(f => f.endsWith('.mdx')).map(f => {
+    const source = fs.readFileSync(path.join(dir, f), 'utf8');
+    const { data } = matter(source);
+    return { title: data.title, date: data.date, description: data.description, slug: f.replace(/\.mdx$/, '') };
+  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, count);
+}
+
 export default function HomePage() {
+  const latestPosts = getLatestPosts();
   return (
     <main>
       <Hero />
       <Skills />
       <Experience />
       <ProjectsSection />
+      {latestPosts.length > 0 && <LatestPosts posts={latestPosts} />}
       <BehindTheScenesTeaser />
       <Contact />
     </main>
@@ -84,6 +99,33 @@ function Experience() {
     <section className="py-16 border-t border-[var(--color-border)]">
       <h2 className="text-2xl font-bold mb-8">Experience</h2>
       <Timeline />
+    </section>
+  );
+}
+
+function LatestPosts({ posts }: { posts: { title: string; date: string; description: string; slug: string }[] }) {
+  return (
+    <section className="py-16 border-t border-[var(--color-border)]">
+      <h2 className="text-2xl font-bold mb-4">Latest Posts</h2>
+      <p className="text-[var(--color-text-muted)] mb-8">
+        Thoughts on QA engineering, agentic development, and career growth.
+      </p>
+      <div className="space-y-4">
+        {posts.map(post => (
+          <Link key={post.slug} href={`/blog/${post.slug}`}>
+            <article className="p-4 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)] transition-colors">
+              <div className="text-xs text-[var(--color-text-muted)] mb-1">{post.date}</div>
+              <h3 className="font-semibold mb-1">{post.title}</h3>
+              <p className="text-sm text-[var(--color-text-muted)] line-clamp-2">{post.description}</p>
+            </article>
+          </Link>
+        ))}
+      </div>
+      <div className="mt-6">
+        <Link href="/blog" className="text-[var(--color-accent)] hover:underline text-sm">
+          View all posts →
+        </Link>
+      </div>
     </section>
   );
 }

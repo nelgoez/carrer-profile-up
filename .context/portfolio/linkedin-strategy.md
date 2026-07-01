@@ -19,7 +19,7 @@
 
 ## Draft posts
 
-### Post 1 — Launch / career narrative
+### Post 1 — Launch / career narrative + template reveal
 
 > 5 years ago I was writing Cucumber features at Newfold Digital.
 >
@@ -28,15 +28,27 @@
 > Same job title (QA Engineer). Completely different job.
 >
 > The shift happened gradually:
-> • 2020: Manual → Automated (Selenium → Playwright)
-> • 2022: Framework architecture (Cucumber + TypeScript)
-> • 2024: Agentic workflows (AI writes tests, I review)
+> • 🤖 2020: Manual → Automated (Selenium → Playwright)
+> • 🏗️ 2022: Framework architecture (Cucumber + TypeScript, Robot Framework + Python)
+> • 🧠 2024: Agentic workflows (AI writes tests, I review)
+> • ⚙️ 2025: Built agentic QA platform (KATA architecture) with Supabase + Playwright — AI plans tests, I approve and review
+> • 🎓 2025: Developed diploma tracking system with RLS-secured Supabase backend + Moodle integration
+> • 📈 2025: Expanded food-app test coverage 40% → 78% with Jest + Playwright E2E critical paths
+> • 🚀 2026: Launched career portfolio at nelthor.qzz.io — built via agentic dev workflows, now a free GitHub template
 >
 > The biggest unlock? Realizing that **test automation is not about recording scripts — it's about designing systems that find bugs faster than humans can think of them.**
 >
-> I just launched my portfolio at nelthor.qzz.io — built entirely with AI agents. Would love to hear from others making this transition.
+> I just launched my portfolio at nelthor.qzz.io — built entirely with AI agents.
 >
-> #AgenticQA #TestAutomation #CareerTransition #SDET
+> What I didn't expect: it turned into something other people can use too.
+>
+> The repo (github.com/nelgoez/career-profile-up) is a free GitHub template — fork it, follow the README, and you have your own portfolio in minutes. Dark theme, Next.js static export, health check scripts, GitHub Actions CI, and the same agentic dev skills I used to build it.
+>
+> The README walks through every step: clone → install → configure → deploy.
+>
+> Would love to hear from others making this transition or giving the template a try.
+>
+> #AgenticQA #TestAutomation #CareerTransition #SDET #OpenSource
 
 ### Post 2 — Technical hook (AI + testing)
 

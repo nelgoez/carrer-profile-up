@@ -1,0 +1,79 @@
+---
+title: 'Behind the Scenes: Same Problem, Two Eras'
+date: '2026-06-15'
+description: 'Side-by-side comparison of traditional vs agentic development workflows — from Jenkins pipelines to AI-assisted coding.'
+tags: ['Meta', 'Agentic', 'Process']
+---
+
+This portfolio (nelthor.qzz.io) was built using agentic development workflows.
+
+But what does that actually mean? Let me show you by comparing how I'd build a feature in 2022 vs 2026.
+
+## The Traditional Way (2022)
+
+Building a portfolio feature at Newfold Digital looked like:
+
+1. **Ticket arrives** in Jira with acceptance criteria
+2. **Plan** the implementation in a design doc
+3. **Write code** in a feature branch
+4. **Write tests** — usually after the code
+5. **Push to Jenkins** for CI
+6. **PR review** with another engineer
+7. **Merge and deploy** — maybe same day, maybe next week
+8. **Verify in production**
+
+Each step was manual. Each handoff created delay. The bottleneck was **human bandwidth**.
+
+## The Agentic Way (2026)
+
+Building the same portfolio feature with AI-assisted workflows:
+
+1. **Story is refined** in the backlog with Gherkin scenarios
+2. **AI proposes** an implementation plan
+3. **I review and approve** the plan (5 minutes)
+4. **AI generates** the code — components, tests, types
+5. **I review** the diff — focus on logic, not boilerplate
+6. **Agent runs** lint, typecheck, tests
+7. **Deploy** — `git push`, CI handles the rest
+8. **Verify** — the site updates in minutes
+
+The bottleneck shifted from **writing code** to **reviewing intent**.
+
+## Head-to-Head
+
+| Step | Traditional (2022) | Agentic (2026) |
+|------|-------------------|----------------|
+| Planning | 2-4 hours | 5-10 minutes |
+| Coding | 4-8 hours | AI generates, I review |
+| Testing | 2-4 hours (manual) | AI generates, I validate |
+| Review | 1-2 hours (sync) | Async, focused on logic |
+| Deploy | Manual Jenkins trigger | Push-to-deploy |
+| Total | 1-2 days | 1-2 hours |
+
+## What Changed
+
+The work didn't disappear — it moved up the abstraction ladder:
+
+- **Before:** I spent 60% of my time writing code and 40% thinking
+- **After:** I spend 80% thinking and 20% reviewing code
+
+The agent doesn't replace judgment. It amplifies it.
+
+## The Tools
+
+This portfolio was built using:
+
+- **OpenCode** — agent orchestration platform
+- **Next.js 15** — static export framework
+- **Tailwind CSS 4** — styling
+- **GitHub Pages** — hosting
+- **Supabase** — data layer (for other projects)
+- **Custom AI skills** — project-foundation, sprint-development, product-management
+
+Every feature followed the same cycle: plan → implement → review → deploy. The AI never worked alone. It proposed, I approved. It coded, I reviewed. It deployed, I verified.
+
+## The Real Takeaway
+
+The same discipline that catches bugs in production also catches broken layouts, stale content, and inconsistent branding. Quality is quality, whether the code is hand-typed or AI-generated.
+
+Agentic development is not about replacing engineers. It's about shifting the work from **writing code** to **directing quality**.

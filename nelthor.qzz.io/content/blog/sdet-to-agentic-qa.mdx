@@ -1,0 +1,57 @@
+---
+title: 'From SDET to Agentic QA Engineer'
+date: '2026-07-01'
+description: 'How 4.5 years at Newfold Digital shaped my transition from traditional test automation to agentic AI-driven quality engineering.'
+tags: ['Career', 'Agentic QA']
+---
+
+Five years ago I was writing Cucumber features at Newfold Digital.
+
+Today I'm building AI agents that write test suites for me.
+
+Same job title (QA Engineer). Completely different job.
+
+The shift happened gradually:
+
+- **2020:** Manual → Automated (Selenium → Playwright)
+- **2022:** Framework architecture — Cucumber + TypeScript, Robot Framework + Python
+- **2024:** Agentic workflows — AI writes tests, I review
+- **2025:** Built agentic QA platform (KATA architecture) with Supabase + Playwright
+- **2026:** Launched career portfolio at nelthor.qzz.io — built via agentic dev workflows
+
+## The Newfold Years (2021–2025)
+
+I joined Newfold Digital as an SDET working across consumer-facing products — networksolutions.com, bluehost.com — serving millions of users. My first task was taking over a 600+ test suite and making it maintainable.
+
+We migrated from legacy WebdriverIO + TypeScript to **Robot Framework over Python**, which improved execution speed and framework maintainability. Then we layered Cucumber + TypeScript on top for teams that preferred BDD-style test definition.
+
+The key lesson: framework architecture matters more than tool choice. A well-structured test suite survives team changes, product pivots, and technology refreshes. A poorly structured one becomes a liability.
+
+## The Agentic Shift
+
+In 2024 I started experimenting with AI-assisted test generation. What began as "let me see if ChatGPT can write a Playwright test" turned into a full agentic workflow:
+
+1. **AI proposes** test scenarios from natural language intent
+2. **I review** for correctness, coverage, and edge cases
+3. **AI generates** the Playwright/Cucumber code
+4. **I approve** and merge
+
+The bottleneck shifted from writing code to **designing intent**. That's the agentic QA difference.
+
+## What I Built
+
+The KATA (Knowledge-Augmented Test Automation) framework emerged from this work — a three-layer pattern:
+
+| Layer | Purpose | Who owns it |
+|-------|---------|-------------|
+| Component | What you test | Dev |
+| Action | How you interact | Framework |
+| Test | What you assert | AI + Human |
+
+AI fits naturally at Layer 3: it generates assertions from natural language intent while the abstraction layers keep the framework stable.
+
+## Looking Forward
+
+Agentic QA is not about replacing engineers. It's about shifting the work from writing code to **directing quality**. The AI handles the mechanics; the engineer handles the intent.
+
+That's what Agentic QA Engineer means to me.

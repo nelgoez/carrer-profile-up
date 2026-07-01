@@ -1,0 +1,91 @@
+---
+title: 'Testing AI Agents — A Practical Guide'
+date: '2026-06-28'
+description: 'Strategies for validating non-deterministic AI outputs, agentic workflows, and probabilistic behaviors in production systems.'
+tags: ['Testing', 'AI', 'Guide']
+---
+
+"AI can't test non-deterministic systems."
+
+I hear this a lot. And it's half-true.
+
+Traditional testing assumes deterministic behavior — same input, same output, every time. AI agents break that assumption. An LLM given the same prompt twice might return different, equally valid responses. A testing framework built on exact matches will fail before it even starts.
+
+Here's what actually works when testing AI-powered applications.
+
+## 1. Semantic Assertions
+
+Don't assert on exact output. Assert on **intent** and **structure**:
+
+```typescript
+// Don't ❌
+expect(response.text).toBe('The weather in Tokyo is 22°C and sunny')
+
+// Do ✅
+expect(response.text).toContainIntent('weather information for Tokyo')
+expect(response.text).toMatchStructure({
+  contains: ['temperature', 'condition', 'location'],
+  excludes: ['unrelated topics', 'harmful content'],
+})
+```
+
+Semantic assertions use embeddings or LLM-as-judge to verify that the output satisfies the request's intent, without caring about exact wording.
+
+## 2. Property-Based Testing
+
+Test **invariants**, not specific outputs. Every AI response should satisfy certain properties regardless of content:
+
+| Property | Example |
+|----------|---------|
+| Safety | No harmful, biased, or toxic content |
+| Format | Response matches expected schema (JSON, markdown, etc.) |
+| Relevance | Response addresses the user's question |
+| Consistency | Same query → semantically equivalent responses |
+| Latency | Response time within SLA (p95 < 2s) |
+
+```python
+@given(st.text())
+def test_safety_property(prompt):
+    response = model.generate(prompt)
+    assert not contains_harmful_content(response)
+    assert response.format_matches(expected_schema)
+```
+
+## 3. Human-in-the-Loop Gates
+
+For high-stakes AI decisions, don't let the agent run fully autonomous. Insert gates:
+
+1. **AI proposes** a test or decision
+2. **Human reviews** for correctness
+3. **Gate passes or blocks** the action
+4. **Feedback loops back** to improve the model
+
+This is the pattern I use in my agentic QA workflows. The AI is fast and thorough; the human is careful and contextual. Both are needed.
+
+## 4. Observability-Driven Testing
+
+Log everything. Assert on patterns.
+
+When your system under test is itself non-deterministic, the test framework needs to shift from **pre-execution assertions** to **post-execution analysis**:
+
+```typescript
+// Collect traces from every agent interaction
+const trace = await collectTrace({
+  steps: agent.executionSteps,
+  decisions: agent.decisionLog,
+  outputs: agent.generatedContent,
+})
+
+// Assert on behavioral patterns
+expect(trace).toSatisfyPattern({
+  noRetryLoops: true,
+  decisionWithinBoundary: true,
+  humanApprovalRateAbove: 0.8,
+})
+```
+
+## The Bottom Line
+
+The frameworks we built at Newfold Digital (Cucumber + TypeScript, Robot Framework) still apply — but the **oracle problem** changes when the system under test is itself non-deterministic.
+
+Written a test for an LLM-powered feature? I'd love to compare approaches.

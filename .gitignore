@@ -127,3 +127,6 @@ dbhub.local.toml
 !skills.lock.json
 !**/skills.lock.json
 .superpowers/
+
+# ===== Graphify Knowledge Graph =====
+graphify-out/
