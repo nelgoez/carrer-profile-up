@@ -86,7 +86,9 @@ export function ProjectsSection() {
                   </div>
                   {repo.stargazers_count > 0 && (
                     <span className="shrink-0 text-sm text-[var(--color-text-muted)]">
-                      ★ {repo.stargazers_count}
+                      ★
+                      {' '}
+                      {repo.stargazers_count}
                     </span>
                   )}
                 </div>
@@ -116,7 +118,8 @@ export function ProjectsSection() {
                     </span>
                   )}
                   <span>
-                    Updated{' '}
+                    Updated
+                    {' '}
                     {new Date(repo.updated_at).toLocaleDateString('en-US', {
                       month: 'short',
                       day: 'numeric',

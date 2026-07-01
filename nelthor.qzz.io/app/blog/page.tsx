@@ -29,6 +29,13 @@ const POSTS = [
     tags: ['Meta', 'Agentic', 'Process'],
     slug: 'behind-the-scenes-two-eras',
   },
+  {
+    title: 'How I Built This Portfolio — With AI Agents',
+    date: '2026-07-01',
+    description: 'From spec to deploy, this portfolio was built using agentic development workflows. No magic — just structured skill orchestration and human judgment.',
+    tags: ['Meta', 'Agentic', 'Portfolio'],
+    slug: 'how-i-built-this-portfolio',
+  },
 ];
 
 export default function BlogPage() {
