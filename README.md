@@ -7,106 +7,77 @@
   ██████████     ░██  ░██░██   ░██░██     ░██ ░██░██   ░██   ░██░██                             
   ██▀▀▀▀▀▀██     ░██  ░██ ░██████ ░███████░██  ░████   ░██   ░██ ░██████                        
   ██ ◉  ◉ ██     ░░   ░░  ░░░░░░  ░░░░░░░ ░░   ░░░░    ░░    ░░  ░░░░░░                         
-  ██   3  ██                                                                                     
-  ██████████     ░███████░███   ░██ ░██████ ░██░███   ░██░███████░███████░██████                 
-   ██    ██      ░██     ░████  ░██░██      ░██░████  ░██░██     ░██     ░██  ░██                
-                  ░█████  ░██░██ ░██░██  ░███░██░██░██ ░██░█████  ░█████  ░██████                 
-                  ░██     ░██ ░██░██░██   ░██░██░██ ░██░██░██     ░██     ░██  ░██                
-                  ░███████░██  ░████ ░██████ ░██░██  ░████░███████░███████░██  ░██                
-                  ░░░░░░░ ░░   ░░░░  ░░░░░░  ░░ ░░   ░░░░ ░░░░░░░ ░░░░░░░ ░░   ░░                 
+  ██   3  ██                                                                                    
+  ██████████     ░███████░███   ░██ ░██████ ░██░███   ░██░███████░███████░██████                
+   ██    ██      ░██     ░████  ░██░██      ░██░████  ░██░██     ░██     ░██  ░██               
+                  ░█████  ░██░██ ░██░██  ░███░██░██░██ ░██░█████  ░█████  ░██████                
+                  ░██     ░██ ░██░██░██   ░██░██░██ ░██░██░██     ░██     ░██  ░██               
+                  ░███████░██  ░████ ░██████ ░██░██  ░████░███████░███████░██  ░██               
+                  ░░░░░░░ ░░   ░░░░  ░░░░░░  ░░ ░░   ░░░░ ░░░░░░░ ░░░░░░░ ░░   ░░                
                                 Agentic QA Engineer | Backend Dev                                      
 </pre>
 
-<h3>Your career, managed as a product — with AI agents.</h3>
+<h1>Nahuel Elias — Career Profile</h1>
 
-<p><i>A career command center that manages your professional presence across platforms: auto-generates your GitHub profile README, hosts your portfolio, tracks content freshness, and demonstrates agentic workflows. Built with the agentic-dev-boilerplate.</i></p>
+<p>
+  <a href="https://nelthor.qzz.io"><b>nelthor.qzz.io</b></a> ·
+  <a href="https://linkedin.com/in/nelgoez">LinkedIn</a> ·
+  <a href="https://github.com/nelgoez">GitHub</a>
+</p>
+
+<p><i>SDET turned Agentic QA Engineer. 5+ years building test automation at Newfold Digital. Now designing intelligent quality systems that work alongside AI agents.</i></p>
 
 <br />
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Bun](https://img.shields.io/badge/Bun-1.0+-000000?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-EAB308?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 </div>
 
 <br />
 
-## What this is
+## Portfolio
 
-**career-profile-up** is a local command center that manages your professional career presence. It uses AI workflow skills to:
+**→ [nelthor.qzz.io](https://nelthor.qzz.io)** — static portfolio built with Next.js, deployed to GitHub Pages.
 
-- **Auto-generate** your GitHub Profile README from live API data
-- **Host** a portfolio landing page (`nelthor.qzz.io`) with projects, blog, and behind-the-scenes content
-- **Monitor** content freshness via health check tools (`bun run health:check`)
-- **Orchestrate** improvements using the agentic-dev workflow (skills for planning, sprints, reviews)
+| Section | What you'll find |
+|---------|-----------------|
+| **Projects** | Live repos from GitHub API, tech stack, links |
+| **Behind the Scenes** | How this was built — traditional QA vs agentic workflows |
+| **Blog** | Articles on Agentic QA, test automation, career |
+| **Experience** | Timeline: Newfold Digital → Agentic QA Engineer |
 
-It's a **personal project** that doubles as a **portfolio piece** — showing both traditional SDET skills (Cucumber, Jenkins, Python) and cutting-edge agentic AI workflows.
+## Tech
 
-## Quick start
+| Layer | Stack |
+|-------|-------|
+| Frontend | Next.js 15 (static export), Tailwind CSS 4, TypeScript |
+| Hosting | GitHub Pages + custom domain (nelthor.qzz.io) |
+| DNS | FreeDNS (afraid.org) → DigitalPlat (qzz.io) |
+| Scripts | Bun + TypeScript (health checks, README generator) |
+| CI/CD | GitHub Actions (auto-deploy on push) |
+
+## What's in this repo
+
+This repo is both the **source code** for the portfolio and the **workspace** where it was built using agentic development workflows. It includes:
+
+- `nelthor.qzz.io/` — Next.js portfolio app
+- `scripts/` — health checks, README generator for GitHub profile
+- `.claude/skills/` — reusable AI workflow skills (sprint-development, product-management, etc.)
+- `.context/` — design specs, content plans, media assets
+
+## Quick start (local)
 
 ```bash
-# Install dependencies
 bun install
-
-# Copy env template
 cp .env.example .env
-
-# Generate GitHub profile README (requires internet)
-bun run generate:readme
-
-# Run health checks
-bun run health:check
-
-# Build landing page
+bun run generate:readme   # auto-generate GitHub profile README
+bun run health:check      # run portfolio health checks
 cd nelthor.qzz.io && bun install && bun run build
 ```
 
-## Project structure
-
-```
-career-profile-up/
-├── .agents/              # Project config + git strategy
-├── .claude/skills/       # AI workflow skills (sprint-dev, product-mgmt, etc.)
-├── .context/             # Product backlog, business maps, media assets
-├── nelthor.qzz.io/       # Portfolio landing page (Next.js SSG)
-├── scripts/
-│   ├── generate-readme.ts    # GitHub profile README generator
-│   └── health/               # Health check tooling
-│       ├── check-assets.ts
-│       ├── check-readme.ts
-│       ├── check-staleness.ts
-│       ├── check-consistency.ts
-│       └── run-all.ts
-├── docs/                 # Design specs, methodology
-├── AGENTS.md             # AI agent interface (/autonomous, behavioral registers)
-└── CLAUDE.md             # AI persistent memory
-```
-
-## Key features
-
-| Feature | Description | How to run |
-|---------|-------------|------------|
-| **Profile auto-generator** | Fetches repos from GitHub API, generates README with stats, badges, latest projects | `bun run generate:readme` |
-| **Portfolio page** | Next.js static site with projects, blog, behind-the-scenes comparisons | `cd nelthor.qzz.io && bun run build` |
-| **Health checks** | 4 checks: assets integrity, README freshness, content staleness, profile consistency | `bun run health:check` |
-| **Autonomous mode** | Gate bypass for faster AI execution: `off`/`semi`/`full` | `/autonomous full` |
-
-## Autonomous mode
-
-Three levels of AI autonomy — defined in `AGENTS.md` and `CLAUDE.md` §13.
-
-```
-/autonomous off    → all checkpoints fire (default)
-/autonomous semi   → upfront manifest approval, per-phase WAITs fire
-/autonomous full   → only HARD gates surface
-```
-
-Gate tables cover 7 workflow skills: sprint-development, project-foundation, design-system, project-bootstrap, product-management, unit-testing, testability-guide.
-
-## Making it your own
-
-This project is designed to be forked: change the GitHub username in `scripts/generate-readme.ts`, update the domain, swap the content, and you have your own AI-powered career profile.
-
 ## License
 
-MIT — use it, fork it, improve it.
+MIT
