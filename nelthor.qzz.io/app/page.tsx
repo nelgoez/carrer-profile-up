@@ -27,10 +27,10 @@ function Hero() {
         Specializing in agentic QA engineering — intelligent systems that work alongside AI agents.
       </p>
       <div className="flex gap-4 justify-center mt-8">
-        <Link href="/projects" className="px-6 py-2 rounded-lg bg-[var(--color-accent)] text-black font-medium hover:opacity-90">
+        <Link href="/projects" className="px-6 py-2 rounded-lg bg-[var(--color-accent)] text-white font-semibold hover:opacity-90 shadow-sm">
           View Projects
         </Link>
-        <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-accent)]">
+        <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border-2 border-[var(--color-text-muted)] text-[var(--color-text)] font-medium hover:border-[var(--color-accent)]">
           Contact
         </a>
       </div>
@@ -107,13 +107,13 @@ function Contact() {
         Open to opportunities in QA Engineering, Backend Development, and Agentic AI roles.
       </p>
       <div className="flex gap-4 justify-center">
-        <a href="https://linkedin.com/in/nelgoez" className="px-6 py-2 rounded-lg bg-[var(--color-accent)] text-black font-medium hover:opacity-90">
+        <a href="https://linkedin.com/in/nelgoez" className="px-6 py-2 rounded-lg bg-[var(--color-accent)] text-white font-semibold hover:opacity-90 shadow-sm">
           LinkedIn
         </a>
-        <a href="https://github.com/nelgoez" className="px-6 py-2 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-accent)]">
+        <a href="https://github.com/nelgoez" className="px-6 py-2 rounded-lg border-2 border-[var(--color-text-muted)] text-[var(--color-text)] font-medium hover:border-[var(--color-accent)]">
           GitHub
         </a>
-        <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-accent)]">
+        <a href="mailto:gomeznahuel@gmail.com" className="px-6 py-2 rounded-lg border-2 border-[var(--color-text-muted)] text-[var(--color-text)] font-medium hover:border-[var(--color-accent)]">
           Email
         </a>
       </div>
