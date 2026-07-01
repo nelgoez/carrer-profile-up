@@ -40,7 +40,7 @@ function generateManifest(): Asset[] {
   const assets: Asset[] = [];
 
   for (const file of files) {
-    const rel = resolve(file).replace(resolve(MEDIA_DIR) + '\\', '').replace(resolve(MEDIA_DIR) + '/', '');
+    const rel = resolve(file).replace(`${resolve(MEDIA_DIR)}\\`, '').replace(`${resolve(MEDIA_DIR)}/`, '');
     const ext = file.toLowerCase().replace(/.*\./, '.');
     let type = 'unknown';
     for (const [category, exts] of Object.entries(MEDIA_TYPES)) {
