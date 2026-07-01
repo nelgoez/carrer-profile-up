@@ -50,28 +50,25 @@
 >
 > #AgenticQA #TestAutomation #CareerTransition #SDET #OpenSource
 
-### Post 2 — Technical hook (AI + testing)
+### Post 2 — Technical hook (AI + testing) — concise style
 
-> "AI can't test non-deterministic systems."
+> The future of testing isn't about writing more assertions — it's about teaching machines to validate what "correct" means.
 >
-> I hear this a lot. And it's half-true.
+> Non-deterministic systems break traditional test oracles. Same input, different output — and both might be valid.
 >
-> Here's what actually works when testing AI-powered apps:
+> The shift I see working in practice:
+> • Semantic assertions over equality checks
+> • Property-based testing over example-based
+> • Human-in-the-loop gates over full autonomy
+> • Observability patterns over pre-written asserts
 >
-> 1. **Semantic assertions** — not "button text equals X" but "page contains intent Y". DeepEval and LLM-as-judge patterns are becoming standard (astaqc.com, 2026).
-> 2. **Property-based testing** — test invariants, not specific outputs. Hypothesis + statistical pass rates across multiple runs (danilop/non-deterministic-software-testing, arxiv 2509.19185).
-> 3. **Human-in-the-loop gates** — AI proposes, human approves. Real-world evidence shows teams adopting this as the primary pattern for agentic validation (arxiv 2509.19185, §4.2).
-> 4. **Observability-driven** — log everything, assert on behavioral patterns. Shift from pre-execution assertions to post-execution trace analysis.
+> Teams at Engenious (engenious.io/services/testing-and-release) are already embedding these patterns into delivery pipelines — ~90% AI-driven coverage with human judgment at the gate.
 >
-> I work with teams using these patterns daily, and partners like Engenious (engenious.io/services/testing-and-release) are embedding AI-native QA into delivery pipelines — achieving ~90% test coverage with AI-driven validation.
+> The tools change fast. The fundamentals don't.
 >
-> The frameworks we built at Newfold (Cucumber + TypeScript, Robot Framework) still apply — but the **oracle problem** changes when the system under test is itself non-deterministic.
+> Attach: nelthor.qzz.io/ai-testing-strategies.svg
 >
-> Drop a comment or DM if you're building LLM-powered features — I'd love to compare approaches.
->
-> Attach: nelthor.qzz.io/ai-testing-strategies.svg (custom diagram showing all 4 strategies)
->
-> #AgenticQA #SoftwareTesting #AI #QualityEngineering #LLM
+> #SoftwareTesting #AITesting #QA #TestAutomation #LLM
 
 ### Post 3 — Portfolio / personal project
 
