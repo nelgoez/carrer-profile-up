@@ -71,7 +71,7 @@ export function ContactSection() {
   );
 }
 
-export function LatestPostsSection({ posts }: { posts: { title: string; date: string; description: string; slug: string }[] }) {
+export function LatestPostsSection({ posts }: { posts: { title: string, date: string, description: string, slug: string }[] }) {
   const { t } = useLocale();
   return (
     <section className="py-16 border-t border-[var(--color-border)]">

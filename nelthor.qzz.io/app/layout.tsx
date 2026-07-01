@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { LocaleProvider } from '@/lib/locale-context';
 import { NavClient } from '@/components/nav-client';
+import { LocaleProvider } from '@/lib/locale-context';
 
 import './globals.css';
 

@@ -58,7 +58,11 @@ export default function CVEsPage() {
         <section className="mb-8">
           <h2 className="text-xl font-bold mb-3 border-b border-[var(--color-border)] pb-2">Portfolio</h2>
           <p className="text-[var(--color-text)] leading-relaxed">
-            Conocé mi trabajo en <a href="https://nelthor.qzz.io" className="text-[var(--color-accent)]">nelthor.qzz.io</a> — blog, proyectos,
+            Conocé mi trabajo en
+            {' '}
+            <a href="https://nelthor.qzz.io" className="text-[var(--color-accent)]">nelthor.qzz.io</a>
+            {' '}
+            — blog, proyectos,
             comparativas traditional vs agentic, y galería multimedia. Construido con workflows de desarrollo agente.
           </p>
         </section>

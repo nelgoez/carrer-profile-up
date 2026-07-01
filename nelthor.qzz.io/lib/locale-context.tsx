@@ -1,6 +1,7 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import en from '../messages/en.json';
 import es from '../messages/es.json';
 
@@ -10,9 +11,9 @@ type Locale = 'en' | 'es';
 const messagesMap: Record<Locale, Messages> = { en, es };
 
 interface LocaleContextValue {
-  locale: Locale;
-  setLocale: (l: Locale) => void;
-  t: (path: string) => string;
+  locale: Locale
+  setLocale: (l: Locale) => void
+  t: (path: string) => string
 }
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
@@ -23,7 +24,8 @@ function resolve(obj: Record<string, unknown>, path: string): string {
   for (const key of keys) {
     if (current && typeof current === 'object' && key in current) {
       current = (current as Record<string, unknown>)[key];
-    } else { return path; }
+    }
+    else { return path; }
   }
   return typeof current === 'string' ? current : path;
 }
