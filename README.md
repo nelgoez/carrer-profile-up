@@ -55,7 +55,7 @@
 |-------|-------|
 | Frontend | Next.js 15 (static export), Tailwind CSS 4, TypeScript |
 | Hosting | GitHub Pages + custom domain (nelthor.qzz.io) |
-| DNS | FreeDNS (afraid.org) → DigitalPlat (qzz.io) |
+| DNS | cloudefare.com → DigitalPlat (qzz.io) |
 | Scripts | Bun + TypeScript (health checks, README generator) |
 | CI/CD | GitHub Actions (auto-deploy on push) |
 
