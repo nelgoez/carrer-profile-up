@@ -3,6 +3,20 @@
   "updated": "2026-07-02",
   "assets": [
     {
+      "id": "qa-allure-smoke-report",
+      "type": "screenshot",
+      "file": "qa\\allure-smoke-report.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-allure-tests",
+      "type": "screenshot",
+      "file": "qa\\allure-tests.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
       "id": "qa-bk147-app-shell-with-sidebar",
       "type": "screenshot",
       "file": "qa\\bk147-app-shell-with-sidebar.png",
@@ -20,6 +34,13 @@
       "id": "qa-bk147-tc10-not-found",
       "type": "screenshot",
       "file": "qa\\bk147-tc10-not-found.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-jira-board",
+      "type": "screenshot",
+      "file": "qa\\jira-board.png",
       "alt_text": "",
       "used_in": []
     },

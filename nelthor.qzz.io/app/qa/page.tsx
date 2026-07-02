@@ -11,6 +11,9 @@ const SCORE = [
 ];
 
 const SCREENSHOTS = [
+  { src: '/media/qa/allure-smoke-report.png', key: 'qa.evidence-allure-smoke' },
+  { src: '/media/qa/allure-tests.png', key: 'qa.evidence-allure-tests' },
+  { src: '/media/qa/jira-board.png', key: 'qa.evidence-jira-board' },
   { src: '/media/qa/bk147-app-shell-with-sidebar.png', key: 'qa.evidence-bug1' },
   { src: '/media/qa/bk147-multi-tab.png', key: 'qa.evidence-bug2' },
   { src: '/media/qa/bk147-tc10-not-found.png', key: 'qa.evidence-bug3' },
