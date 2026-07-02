@@ -1,3 +1,8 @@
+---
+name: agentic-debate
+description: Multi-agent role-play for structured decisions — dispatches 2-3 AI agents with Tavily/Context7 research, then synthesizes a recommendation with comparison table
+---
+
 # Agentic Debate — Multi-Agent Role-Play for Decisions
 
 Triggers: `/agentic-debate`, `debate esto`, `role-play entre agentes`, `put several agents to debate`
@@ -24,8 +29,12 @@ Run a structured, research-backed debate between 2-3 AI agents, each defending a
 
 Dispatch one subagent per option in parallel. Each receives:
 - The full context (project, stack, options)
-- 3-4 Tavily search queries specific to their argument
+- 3-4 research queries specific to their argument
 - Instructions to return arguments with sources in ≤350 words
+
+Available research tools:
+- **Tavily**: web search for news, blog posts, general information
+- **Context7**: library documentation for frameworks, APIs, SDKs
 
 Subagent prompt template (substitute OPTION_LABEL, OPTION_DESC, and QUERIES):
 
@@ -33,7 +42,10 @@ Subagent prompt template (substitute OPTION_LABEL, OPTION_DESC, and QUERIES):
 Eres el Agente {LABEL} — {PERSONALITY}.
 Contexto: {full project context}
 Tu postura: DEFENDER la Opción {LABEL} ({short desc}).
-Usa Tavily para investigar: {QUERIES}
+Herramientas de investigación disponibles:
+  - Tavily (web): noticias, artículos, datos de mercado
+  - Context7 (docs): documentación de librerías, frameworks, APIs
+Consultas: {QUERIES}
 Devolvé argumentario con fuentes en ≤350 palabras.
 ```
 
@@ -59,7 +71,7 @@ Present options and wait for user choice before implementing.
 
 ## Rules
 
-- Each agent MUST use at least 2 real search queries (Tavily) — no invented data
+- Each agent MUST use at least 2 real research queries (Tavily web + Context7 docs) — no invented data
 - Each agent returns sources (URLs) with their claims
 - No agent may concede before the synthesis phase
 - Final recommendation is YOURS (the orchestrator), not the agents'
