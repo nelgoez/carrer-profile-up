@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Timeline } from '@/components/timeline';
 import { useLocale } from '@/lib/locale-context';
+import { Bug, Code, Wrench } from 'lucide-react';
 
 export function HeroSection() {
   const { t } = useLocale();
@@ -31,6 +32,8 @@ export function HeroSection() {
   );
 }
 
+const SKILL_ICONS = [Bug, Code, Wrench];
+
 export function SkillsSection() {
   const { t } = useLocale();
   const categories = [
@@ -42,16 +45,22 @@ export function SkillsSection() {
     <section className="py-16 border-t border-[var(--color-border)]">
       <h2 className="text-2xl font-bold mb-8">{t('skills.title')}</h2>
       <div className="grid md:grid-cols-3 gap-8">
-        {categories.map(cat => (
-          <div key={cat.titleKey}>
-            <h3 className="text-sm uppercase tracking-wider text-[var(--color-text-muted)] mb-4">{t(cat.titleKey)}</h3>
-            <div className="flex flex-wrap gap-2">
-              {cat.skills.map(s => (
-                <span key={s} className="px-3 py-1 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">{s}</span>
-              ))}
+        {categories.map((cat, i) => {
+          const Icon = SKILL_ICONS[i];
+          return (
+            <div key={cat.titleKey} className="scroll-reveal">
+              <div className="flex items-center gap-2 mb-4">
+                <Icon size={16} className="text-[var(--color-accent)]" />
+                <h3 className="text-sm uppercase tracking-wider text-[var(--color-text-muted)]">{t(cat.titleKey)}</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {cat.skills.map(s => (
+                  <span key={s} className="px-3 py-1 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-sm">{s}</span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

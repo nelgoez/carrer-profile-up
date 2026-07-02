@@ -38,6 +38,26 @@
     "description": "See how this portfolio was built — from traditional QA frameworks at Newfold Digital to agentic AI-assisted development. Side-by-side comparisons, architecture diagrams, and workflow recordings.",
     "cta": "Explore the process →"
   },
+  "evidence": {
+    "title": "Real Results, Real Evidence",
+    "description": "Screenshots and artifacts from real projects — test automation, CI/CD pipelines, bug findings, and architecture work.",
+    "view-qa": "View QA Evidence →",
+    "ci-pipelines": "CI/CD Pipelines",
+    "ci-pipelines-desc": "GitHub Actions workflows running typecheck, unit, API, smoke, and regression tests",
+    "test-reports": "Test Reports",
+    "test-reports-desc": "Allure report with smoke test results, step-by-step breakdowns, and trend history",
+    "bug-evidence": "Bug Evidence",
+    "bug-evidence-desc": "Real defect tracking with Jira — traceability from test case to resolution",
+    "coding-sessions": "Coding Sessions",
+    "coding-sessions-desc": "Live coding and test automation sessions captured from real development work"
+  },
+  "metrics": {
+    "title": "By the Numbers",
+    "repos": "Public Repos",
+    "workflows": "CI Workflows",
+    "coverage": "Test Coverage",
+    "experience": "Years Experience"
+  },
   "contact": {
     "title": "Get in Touch",
     "description": "Open to opportunities in QA Engineering, Backend Development, and Agentic AI roles.",

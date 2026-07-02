@@ -38,6 +38,26 @@
     "description": "Mirá cómo se construyó este portfolio — desde frameworks tradicionales en Newfold Digital hasta desarrollo asistido por agentes de IA. Comparaciones, diagramas de arquitectura y grabaciones de workflows.",
     "cta": "Explorar el proceso →"
   },
+  "evidence": {
+    "title": "Resultados Reales, Evidencia Real",
+    "description": "Capturas y artefactos de proyectos reales — automatización de pruebas, pipelines CI/CD, hallazgos de bugs y trabajo de arquitectura.",
+    "view-qa": "Ver Evidencia QA →",
+    "ci-pipelines": "Pipelines CI/CD",
+    "ci-pipelines-desc": "Workflows de GitHub Actions ejecutando typecheck, unit, API, smoke y regression tests",
+    "test-reports": "Reportes de Test",
+    "test-reports-desc": "Reporte Allure con resultados de smoke tests, desglose paso a paso e historial de tendencias",
+    "bug-evidence": "Evidencia de Bugs",
+    "bug-evidence-desc": "Seguimiento de defectos reales con Jira — trazabilidad desde el caso de prueba hasta la resolución",
+    "coding-sessions": "Sesiones de Código",
+    "coding-sessions-desc": "Sesiones de codificación y automatización de pruebas capturadas de trabajo real de desarrollo"
+  },
+  "metrics": {
+    "title": "En Números",
+    "repos": "Repos Públicos",
+    "workflows": "Workflows CI",
+    "coverage": "Cobertura de Tests",
+    "experience": "Años de Experiencia"
+  },
   "contact": {
     "title": "Contacto",
     "description": "Abierto a oportunidades en QA Engineering, Backend Development y roles de IA Agente.",

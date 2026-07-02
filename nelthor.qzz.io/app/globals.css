@@ -11,6 +11,34 @@
   --color-accent-strong: #7c3aed;
 }
 
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  animation: fadeSlideUp 0.5s ease-out forwards;
+}
+
+.scroll-reveal:nth-child(1) { animation-delay: 0s; }
+.scroll-reveal:nth-child(2) { animation-delay: 0.1s; }
+.scroll-reveal:nth-child(3) { animation-delay: 0.2s; }
+.scroll-reveal:nth-child(4) { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -32,6 +60,10 @@ a:hover {
 ::selection {
   background: var(--color-accent);
   color: #000;
+}
+
+.browser-mockup {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
 @media print {
