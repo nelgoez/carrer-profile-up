@@ -17,6 +17,7 @@ jobs:
       - run: bun run types:check
       - run: bun run lint:check
       - run: bun run format:check
+      - run: bun run health:check
 
   build-portfolio:
     runs-on: ubuntu-latest
