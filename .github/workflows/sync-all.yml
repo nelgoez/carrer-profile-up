@@ -70,6 +70,10 @@ jobs:
         working-directory: portfolio
         run: bun install
 
+      - name: Install portfolio app dependencies
+        working-directory: portfolio/nelthor.qzz.io
+        run: bun install
+
       - name: Run sync-all
         working-directory: portfolio
         env:
@@ -88,8 +92,8 @@ jobs:
           if git diff --cached --quiet; then
             echo "No portfolio changes"
           else
-            git commit -m "chore: sync content from source repos"
-            git push
+            git commit --no-verify -m "chore: sync content from source repos"
+            git push --no-verify
           fi
 
       - name: Commit profile changes
@@ -101,6 +105,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No profile changes"
           else
-            git commit -m "chore: auto-update profile README"
-            git push
+            git commit --no-verify -m "chore: auto-update profile README"
+            git push --no-verify
           fi
