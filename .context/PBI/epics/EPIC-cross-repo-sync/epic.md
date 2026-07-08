@@ -1,6 +1,9 @@
 # EPIC: Cross-Repo Content Sync Pipeline
 
-**Status:** Building (Phase 1-3 complete)
+**Status:** Phase 1-4 complete, live in production
+**Last session:** 2026-07-08
+**Live since:** Push to main on bunkai-qa-engineering triggers full E2E pipeline
+**Todo next:** Phase 5 (template + social) + roll out to remaining source repos
 **Priority:** High
 **Goal:** Unified sync pipeline that ingests metadata/images from source repos (bunkai, DTS, UNC), updates portfolio content, and regenerates the GitHub profile README — all in one event-driven workflow.
 
@@ -215,24 +218,24 @@ After Phase 3, the profile gets these new sections (data sourced from portfolio)
 
 ---
 
-## Rollout Order
+## Remaining Work
 
-```
-Week 1: Phase 1 (script + data model)
-  Day 1-2: Write portfolio.json schema, create sync-all.ts skeleton
-  Day 3-4: Implement Phase A (ingest from repos)
-  Day 5:   Implement Phase B (portfolio content generation)
+### Phase 5: Template + Social Post (NEXT SESSION)
 
-Week 2: Phase 2-3 (integration + workflows)
-  Day 1-2: Implement Phase C (profile README generation)
-  Day 3:   Create sync-all.yml, test with manual dispatch
-  Day 4:   Update projects-section.tsx, fix generate-readme bug
-  Day 5:   Add trigger workflows to first source repo (bunkai)
+**Template feature** — crumb: update `.template/` with:
+- Full inventory of tools available (all agentic dev skills, MCPs configured)
+- Workflow patterns documented (GH Actions, sync pipelines, deploy pipelines)
+- How to fork and customize for a new persona
+- See `scripts/sync-all.ts` for the cross-repo sync integration point
+- See `.github/workflows/sync-all.yml` for the orchestrator pattern
+- See `.github/workflows/deploy-portfolio.yml` for the deploy chain
+- See `bunkai-qa-engineering/portfolio.json` for the metadata convention
 
-Week 3: Phase 4 (enrichment)
-  Day 1-3: Enrich profile README with blog/skills/experience/metrics
-  Day 4-5: Roll out to remaining source repos (DTS, UNC)
+**LinkedIn post** — draft highlighting:
+- Cross-repo sync pipeline architecture (diagram in §Architecture above)
+- Before/after: profile README was stale cron (broken), now auto-updating via event-driven pipeline
+- How portfolio content feeds the GitHub profile
+- Open-source template for others
 
-Week 4: Phase 5 (template + social)
-  Template docs + LinkedIn post
-```
+### Roll out to remaining repos
+- Add `portfolio.json` + `trigger-portfolio-sync.yml` to: `agentic-diplo-track-sys`, `diploma-tracking-sys`, `unc-agentic-dev`
