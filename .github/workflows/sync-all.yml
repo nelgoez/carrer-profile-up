@@ -1,0 +1,106 @@
+name: Sync All Content
+on:
+  repository_dispatch:
+    types: [portfolio-sync]
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      repos:
+        description: 'Comma-separated repo names to sync (default: all)'
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sync-all
+  cancel-in-progress: true
+
+env:
+  GH_PAT: ${{ secrets.GH_PAT }}
+  PORTFOLIO_DIR: ${{ github.workspace }}/portfolio
+  PROFILE_DIR: ${{ github.workspace }}/profile
+  SOURCE_DIRS: ${{ github.workspace }}/sources
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout portfolio
+        uses: actions/checkout@v4
+        with:
+          path: portfolio
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+        with:
+          repository: nelgoez/nelgoez
+          path: profile
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Checkout source repos
+        run: |
+          REPOS="bunkai-qa-engineering agentic-diplo-track-sys diploma-tracking-sys unc-agentic-dev"
+          if [ -n "${{ github.event.client_payload.repo }}" ]; then
+            # Single repo from repository_dispatch
+            SINGLE_REPO="${{ github.event.client_payload.repo }}"
+            SINGLE_NAME="${SINGLE_REPO##*/}"
+            echo "Cloning triggered repo: $SINGLE_NAME"
+            git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/$SINGLE_REPO.git \
+              sources/$SINGLE_NAME
+          else
+            # Full sync — clone all known repos
+            for REPO in $REPOS; do
+              echo "Cloning nelgoez/$REPO..."
+              git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/nelgoez/$REPO.git \
+                sources/$REPO --quiet
+            done
+          fi
+          echo "---"
+          echo "Checked out repos:"
+          ls sources/
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        working-directory: portfolio
+        run: bun install
+
+      - name: Run sync-all
+        working-directory: portfolio
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          PORTFOLIO_DIR: ${{ github.workspace }}/portfolio
+          PROFILE_DIR: ${{ github.workspace }}/profile
+          SOURCE_DIRS: ${{ github.workspace }}/sources
+        run: bun run scripts/sync-all.ts
+
+      - name: Commit portfolio changes
+        working-directory: portfolio
+        run: |
+          git config user.name "profile-bot"
+          git config user.email "bot@nelgoez.dev"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No portfolio changes"
+          else
+            git commit -m "chore: sync content from source repos"
+            git push
+          fi
+
+      - name: Commit profile changes
+        working-directory: profile
+        run: |
+          git config user.name "profile-bot"
+          git config user.email "bot@nelgoez.dev"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No profile changes"
+          else
+            git commit -m "chore: auto-update profile README"
+            git push
+          fi

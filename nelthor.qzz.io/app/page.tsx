@@ -17,8 +17,19 @@ function getLatestPosts(count = 3) {
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, count);
 }
 
+function getInitialProjects() {
+  const jsonPath = path.join(process.cwd(), 'content/projects/_projects.json');
+  if (!fs.existsSync(jsonPath)) { return null; }
+  try {
+    const raw = fs.readFileSync(jsonPath, 'utf8');
+    return JSON.parse(raw).repos ?? null;
+  }
+  catch { return null; }
+}
+
 export default function HomePage() {
   const latestPosts = getLatestPosts();
+  const initialProjects = getInitialProjects();
 
   return (
     <main>
@@ -26,7 +37,7 @@ export default function HomePage() {
       <ImpactMetrics />
       <SkillsSection />
       <ExperienceSection />
-      <ProjectsSection />
+      <ProjectsSection initialProjects={initialProjects} />
       <EvidenceShowcase />
       {latestPosts.length > 0 && <LatestPostsSection posts={latestPosts} />}
       <BtsTeaserSection />

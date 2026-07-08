@@ -1,0 +1,30 @@
+{
+  "updated": "2026-07-08",
+  "repos": [
+    {
+      "name": "bunkai-qa-engineering",
+      "displayName": "Bunkai QA Engineering",
+      "description": "AI-driven Quality Engineering boilerplate — Playwright + KATA + Jira/Xray.",
+      "url": "https://github.com/nelgoez/bunkai-qa-engineering",
+      "language": null,
+      "tags": ["playwright", "typescript", "bun", "kata", "allure", "agentic-qa"],
+      "thumbnail": "/media/bunkai-qa-engineering/thumbnail.png",
+      "featured": true,
+      "order": 1,
+      "updatedAt": "2026-07-08",
+      "screenshots": [
+        {
+          "path": "bk147-app-shell-with-sidebar.png",
+          "alt": "App shell with sidebar"
+        },
+        {
+          "path": "bk147-multi-tab.png",
+          "alt": "Multi-tab navigation"
+        }
+      ],
+      "links": {
+        "allure_staging": "https://nelgoez.github.io/bunkai-qa-engineering/staging/sanity/"
+      }
+    }
+  ]
+}

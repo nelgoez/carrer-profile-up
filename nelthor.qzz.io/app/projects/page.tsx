@@ -1,8 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import Link from 'next/link';
 import { ProjectsSection } from '@/components/projects-section';
 import { T } from '@/components/t';
 
+function getInitialProjects() {
+  const jsonPath = path.join(process.cwd(), 'content/projects/_projects.json');
+  if (!fs.existsSync(jsonPath)) { return null; }
+  try {
+    const raw = fs.readFileSync(jsonPath, 'utf8');
+    return JSON.parse(raw).repos ?? null;
+  }
+  catch { return null; }
+}
+
 export default function ProjectsPage() {
+  const initialProjects = getInitialProjects();
+
   return (
     <main>
       <div className="mb-8">
@@ -14,7 +28,7 @@ export default function ProjectsPage() {
       <p className="text-[var(--color-text-muted)] mb-12">
         <T k="projects.description" />
       </p>
-      <ProjectsSection />
+      <ProjectsSection initialProjects={initialProjects} />
     </main>
   );
 }
