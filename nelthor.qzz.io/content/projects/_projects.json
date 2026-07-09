@@ -1,17 +1,85 @@
 {
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "repos": [
     {
-      "name": "test-repo",
-      "displayName": "Test",
+      "name": "bunkai-qa-engineering",
+      "displayName": "Bunkai QA Engineering",
+      "description": "AI-driven Quality Engineering boilerplate — Playwright + KATA + Jira/Xray for the full testing lifecycle, driven by agentic skills.",
+      "url": "https://github.com/nelgoez/bunkai-qa-engineering",
+      "language": "TypeScript",
+      "tags": [
+        "playwright",
+        "typescript",
+        "bun",
+        "kata",
+        "allure",
+        "agentic-qa",
+        "jira-xray",
+        "ci-cd"
+      ],
+      "thumbnail": "/media/bunkai-qa-engineering/thumbnail.png",
+      "featured": true,
+      "order": 1,
+      "updatedAt": "2026-07-08T20:31:03Z",
+      "screenshots": [
+        {
+          "path": "bk147-app-shell-with-sidebar.png",
+          "alt": "Bunkai app shell with sidebar — UI layout test"
+        },
+        {
+          "path": "bk147-multi-tab.png",
+          "alt": "Bunkai multi-tab navigation — state consistency across tabs"
+        },
+        {
+          "path": "bk147-tc10-not-found.png",
+          "alt": "Bunkai TC-10 — 404 handling on invalid routes"
+        }
+      ],
+      "links": {
+        "allure_staging": "https://nelgoez.github.io/bunkai-qa-engineering/staging/sanity/",
+        "allure_production": "https://nelgoez.github.io/bunkai-qa-engineering/production/sanity/",
+        "docs": "https://github.com/nelgoez/bunkai-qa-engineering/tree/main/docs"
+      }
+    },
+    {
+      "name": "agentic-diplo-track-sys",
+      "displayName": "agentic-diplo-track-sys",
       "description": "",
-      "url": "https://github.com/nelgoez/test-repo",
-      "language": null,
+      "url": "https://github.com/nelgoez/agentic-diplo-track-sys",
+      "language": "TypeScript",
       "tags": [],
       "thumbnail": null,
-      "featured": true,
+      "featured": false,
       "order": 99,
-      "updatedAt": "2026-07-08",
+      "updatedAt": "2026-07-08T20:58:15Z",
+      "screenshots": [],
+      "links": {}
+    },
+    {
+      "name": "diploma-tracking-sys",
+      "displayName": "diploma-tracking-sys",
+      "description": "Diploma Tracking System — UNC",
+      "url": "https://github.com/nelgoez/diploma-tracking-sys",
+      "language": "TypeScript",
+      "tags": [],
+      "thumbnail": null,
+      "featured": false,
+      "order": 99,
+      "updatedAt": "2026-07-08T06:14:17Z",
+      "screenshots": [],
+      "links": {}
+    },
+    {
+      "name": "unc-agentic-dev",
+      "displayName": "unc-agentic-dev",
+      "description": "UNC Campus Virtual — Agentic dev infrastructure for Moodle automation, reengagement & diploma tracking",
+      "url": "https://github.com/nelgoez/unc-agentic-dev",
+      "language": "HTML",
+      "tags": [],
+      "thumbnail": null,
+      "featured": false,
+      "order": 99,
+      "updatedAt": "2026-07-02T22:46:46Z",
       "screenshots": [],
       "links": {}
     }
