@@ -40,7 +40,7 @@ function generateManifest(): Asset[] {
   const assets: Asset[] = [];
 
   for (const file of files) {
-    const rel = resolve(file).replace(`${resolve(MEDIA_DIR)}\\`, '').replace(`${resolve(MEDIA_DIR)}/`, '');
+    const rel = resolve(file).replace(`${resolve(MEDIA_DIR)}\\`, '').replace(`${resolve(MEDIA_DIR)}/`, '').replace(/\\/g, '/');
     const ext = file.toLowerCase().replace(/.*\./, '.');
     let type = 'unknown';
     for (const [category, exts] of Object.entries(MEDIA_TYPES)) {
@@ -58,7 +58,7 @@ function generateManifest(): Asset[] {
   return assets;
 }
 
-const manifest = { version: 1, updated: new Date().toISOString().split('T')[0], assets: generateManifest() };
+const manifest = { version: 2, updated: new Date().toISOString().split('T')[0], assets: generateManifest() };
 writeFileSync(resolve(MEDIA_DIR, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
 
 if (!existsSync(PUBLIC_MEDIA)) { mkdirSync(PUBLIC_MEDIA, { recursive: true }); }

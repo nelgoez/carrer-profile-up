@@ -3,156 +3,9 @@
   "updated": "2026-07-16",
   "assets": [
     {
-      "id": "screenshots-homepage-hero",
+      "id": "bunkai-qa-engineering-.context-PBI-epics-EPIC-BK-7-project-module-hierarchy-stories-STORY-BK-8-tms-project-create-a-project-inside-a-workspace-bk52-scoping-test-project",
       "type": "screenshot",
-      "file": "screenshots/homepage-hero.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-behind-the-scenes",
-      "type": "screenshot",
-      "file": "screenshots/behind-the-scenes.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-coding-session",
-      "type": "screenshot",
-      "file": "screenshots/coding-session.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-blog-listing",
-      "type": "screenshot",
-      "file": "screenshots/blog-listing.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-CI-workers",
-      "type": "screenshot",
-      "file": "screenshots/CI-workers.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-cucumber-code-session",
-      "type": "screenshot",
-      "file": "screenshots/cucumber-code-session.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "screenshots-projects-page",
-      "type": "screenshot",
-      "file": "screenshots/projects-page.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-funtionalities-video-check-PROD",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-funtionalities-video-check-PROD.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-bk147-tc10-not-found",
-      "type": "screenshot",
-      "file": "qa/bk147-tc10-not-found.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-allure-graphs",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-allure-graphs.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-leng-options-ES-categories-section",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-leng-options-ES-categories-section.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-jira-board",
-      "type": "screenshot",
-      "file": "qa/jira-board.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-allure-tests",
-      "type": "screenshot",
-      "file": "qa/allure-tests.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-suite-details",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-suite-details.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-bk147-app-shell-with-sidebar",
-      "type": "screenshot",
-      "file": "qa/bk147-app-shell-with-sidebar.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-allure-smoke-report",
-      "type": "screenshot",
-      "file": "qa/allure-smoke-report.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-bk147-multi-tab",
-      "type": "screenshot",
-      "file": "qa/bk147-multi-tab.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-bunkasi-allure-failed-case-details",
-      "type": "screenshot",
-      "file": "qa/bunkasi-allure-failed-case-details.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-allure-report",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-allure-report.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-suites-PROD",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-suites-PROD.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "qa-DTS-smoke-graphs-PROD",
-      "type": "screenshot",
-      "file": "qa/DTS-smoke-graphs-PROD.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "bunkai-qa-engineering-bk147-tc10-not-found",
-      "type": "screenshot",
-      "file": "bunkai-qa-engineering/bk147-tc10-not-found.png",
+      "file": "bunkai-qa-engineering/.context/PBI/epics/EPIC-BK-7-project-module-hierarchy/stories/STORY-BK-8-tms-project-create-a-project-inside-a-workspace/bk52-scoping-test-project.png",
       "alt_text": "",
       "used_in": []
     },
@@ -171,16 +24,9 @@
       "used_in": []
     },
     {
-      "id": "bunkai-qa-engineering-thumbnail",
+      "id": "bunkai-qa-engineering-bk147-tc10-not-found",
       "type": "screenshot",
-      "file": "bunkai-qa-engineering/thumbnail.png",
-      "alt_text": "",
-      "used_in": []
-    },
-    {
-      "id": "bunkai-qa-engineering-.context-PBI-epics-EPIC-BK-7-project-module-hierarchy-stories-STORY-BK-8-tms-project-create-a-project-inside-a-workspace-bk52-scoping-test-project",
-      "type": "screenshot",
-      "file": "bunkai-qa-engineering/.context/PBI/epics/EPIC-BK-7-project-module-hierarchy/stories/STORY-BK-8-tms-project-create-a-project-inside-a-workspace/bk52-scoping-test-project.png",
+      "file": "bunkai-qa-engineering/bk147-tc10-not-found.png",
       "alt_text": "",
       "used_in": []
     },
@@ -192,58 +38,177 @@
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-06-pdf-triggered",
+      "id": "bunkai-qa-engineering-thumbnail",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/06-pdf-triggered.png",
+      "file": "bunkai-qa-engineering/thumbnail.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-05-sidebar-biblioteca",
+      "id": "qa-allure-smoke-report",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/05-sidebar-biblioteca.png",
+      "file": "qa/allure-smoke-report.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-01-course-landing",
+      "id": "qa-allure-tests",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/01-course-landing.png",
+      "file": "qa/allure-tests.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-03-tab-bar",
+      "id": "qa-bk147-app-shell-with-sidebar",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/03-tab-bar.png",
+      "file": "qa/bk147-app-shell-with-sidebar.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-07-after-pdf-still-locked",
+      "id": "qa-bk147-multi-tab",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/07-after-pdf-still-locked.png",
+      "file": "qa/bk147-multi-tab.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-evidence-02-mod3-forced-click",
+      "id": "qa-bk147-tc10-not-found",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/evidence/02-mod3-forced-click.png",
+      "file": "qa/bk147-tc10-not-found.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-audit-course-269-section-4",
+      "id": "qa-bunkasi-allure-failed-case-details",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/audit/course-269-section-4.png",
+      "file": "qa/bunkasi-allure-failed-case-details.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-audit-course-269-section-3",
+      "id": "qa-DTS-smoke-allure-graphs",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/audit/course-269-section-3.png",
+      "file": "qa/DTS-smoke-allure-graphs.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-allure-report",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-allure-report.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-funtionalities-video-check-PROD",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-funtionalities-video-check-PROD.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-graphs-PROD",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-graphs-PROD.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-leng-options-ES-categories-section",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-leng-options-ES-categories-section.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-suite-details",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-suite-details.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-DTS-smoke-suites-PROD",
+      "type": "screenshot",
+      "file": "qa/DTS-smoke-suites-PROD.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "qa-jira-board",
+      "type": "screenshot",
+      "file": "qa/jira-board.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-behind-the-scenes",
+      "type": "screenshot",
+      "file": "screenshots/behind-the-scenes.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-blog-listing",
+      "type": "screenshot",
+      "file": "screenshots/blog-listing.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-CI-workers",
+      "type": "screenshot",
+      "file": "screenshots/CI-workers.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-coding-session",
+      "type": "screenshot",
+      "file": "screenshots/coding-session.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-cucumber-code-session",
+      "type": "screenshot",
+      "file": "screenshots/cucumber-code-session.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-homepage-hero",
+      "type": "screenshot",
+      "file": "screenshots/homepage-hero.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "screenshots-projects-page",
+      "type": "screenshot",
+      "file": "screenshots/projects-page.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-docs-pitch-images-gemini-cli-official",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/docs/pitch/images/gemini-cli-official.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-docs-pitch-images-gemini-cli-terminal",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/docs/pitch/images/gemini-cli-terminal.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-audit-course-269-section-0",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/course-269-section-0.png",
       "alt_text": "",
       "used_in": []
     },
@@ -262,23 +227,58 @@
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-reports-audit-course-269-section-0",
+      "id": "unc-agentic-dev-reports-audit-course-269-section-3",
       "type": "screenshot",
-      "file": "unc-agentic-dev/reports/audit/course-269-section-0.png",
+      "file": "unc-agentic-dev/reports/audit/course-269-section-3.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-docs-pitch-images-gemini-cli-official",
+      "id": "unc-agentic-dev-reports-audit-course-269-section-4",
       "type": "screenshot",
-      "file": "unc-agentic-dev/docs/pitch/images/gemini-cli-official.png",
+      "file": "unc-agentic-dev/reports/audit/course-269-section-4.png",
       "alt_text": "",
       "used_in": []
     },
     {
-      "id": "unc-agentic-dev-docs-pitch-images-gemini-cli-terminal",
+      "id": "unc-agentic-dev-reports-evidence-01-course-landing",
       "type": "screenshot",
-      "file": "unc-agentic-dev/docs/pitch/images/gemini-cli-terminal.png",
+      "file": "unc-agentic-dev/reports/evidence/01-course-landing.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-evidence-02-mod3-forced-click",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/evidence/02-mod3-forced-click.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-evidence-03-tab-bar",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/evidence/03-tab-bar.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-evidence-05-sidebar-biblioteca",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/evidence/05-sidebar-biblioteca.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-evidence-06-pdf-triggered",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/evidence/06-pdf-triggered.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-evidence-07-after-pdf-still-locked",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/evidence/07-after-pdf-still-locked.png",
       "alt_text": "",
       "used_in": []
     }
