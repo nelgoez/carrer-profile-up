@@ -164,19 +164,13 @@ export default function CVPage() {
               </p>
             </div>
             <div className="p-4 rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)]">
-              <h3 className="font-semibold text-sm">Jira & Xray DOJO 3</h3>
+              <h3 className="font-semibold text-sm">Jira & Xray — Test Management</h3>
               <p className="text-sm text-[var(--color-text-muted)]">UPEX Galaxy • 2026</p>
               <p className="text-xs mt-1">
                 <a href="/certificates/Jira-Xray-UPEX.pdf" target="_blank" className="text-[var(--color-accent)]">View Certificate (PDF)</a>
               </p>
             </div>
-            <div className="p-4 rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)]">
-              <h3 className="font-semibold text-sm">DOJO 3 — Agentic QA Engineering</h3>
-              <p className="text-sm text-[var(--color-text-muted)]">UPEX Galaxy • 2026</p>
-              <p className="text-xs mt-1">
-                <a href="/certificates/Nahuel%20Gomez%20DOJO%203.png" target="_blank" className="text-[var(--color-accent)]">View Badge</a>
-              </p>
-            </div>
+
             <div className="p-4 rounded-lg bg-[var(--color-bg)] border border-[var(--color-border)]">
               <h3 className="font-semibold text-sm">IA y Automatización de Flujos de Trabajo</h3>
               <p className="text-sm text-[var(--color-text-muted)]">Campus Virtual UNC</p>
