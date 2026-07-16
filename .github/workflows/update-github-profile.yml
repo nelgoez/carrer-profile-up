@@ -16,10 +16,17 @@ jobs:
         with:
           repository: nelgoez/nelgoez
           token: ${{ secrets.GH_PAT }}
+          path: profile
+
+      - uses: actions/checkout@v4
+        with:
+          repository: nelgoez/career-profile-up
+          token: ${{ secrets.GH_PAT }}
+          path: career-profile-up
 
       - uses: oven-sh/setup-bun@v2
 
-      - run: bunx --yes github:nelgoez/career-profile-up#main generate-readme
+      - run: bun run career-profile-up/scripts/generate-readme.ts
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
@@ -30,8 +37,12 @@ jobs:
           SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SUPABASE_PUBLISHABLE_KEY }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
 
+      - name: Copy generated README to profile repo
+        run: cp career-profile-up/dist/profile/README.md profile/README.md
+
       - name: Check for changes
         id: diff
+        working-directory: profile
         run: |
           if git diff --quiet README.md; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -41,6 +52,7 @@ jobs:
 
       - name: Commit and push
         if: steps.diff.outputs.changed == 'true'
+        working-directory: profile
         run: |
           git config user.name "profile-bot"
           git config user.email "bot@nelgoez.dev"
