@@ -364,13 +364,13 @@ function generateProfileReadme(_repos: SourceRepo[]) {
         '## 📝 Latest Blog Posts',
         '',
         ...blogPosts.slice(0, 3).map(p => [
-          `### [${p.title}](https://nelthor.qzz.io/blog/${p.slug})`,
+          `### [${p.title}](https://nelthor.com.ar/blog/${p.slug})`,
           `${p.description}`,
           `📅 ${formatDate(p.date)}`,
           '',
         ].join('\n')),
         '',
-        '➡️ [Read more on nelthor.qzz.io](https://nelthor.qzz.io/blog)',
+        '➡️ [Read more on nelthor.com.ar](https://nelthor.com.ar/blog)',
         '',
       ].join('\n')
     : '';
@@ -386,14 +386,14 @@ function generateProfileReadme(_repos: SourceRepo[]) {
     '',
     '> Quality Engineering is a design discipline, not a testing phase. Shift-left thinking — finding issues before they become bugs, building testability into architecture, and using automation to amplify human judgment, not replace it.',
     '',
-    '📊 [View full QA scorecard →](https://nelthor.qzz.io/qa)',
+    '📊 [View full QA scorecard →](https://nelthor.com.ar/qa)',
     '',
   ].join('\n');
 
   const portfolioLink = [
     '## 🌐 Full Portfolio',
     '',
-    '> Everything I do, documented with evidence: **[nelthor.qzz.io](https://nelthor.qzz.io)** — projects, blog, QA scorecards, architecture, and behind-the-scenes of how this profile stays updated.',
+    '> Everything I do, documented with evidence: **[nelthor.com.ar](https://nelthor.com.ar)** — projects, blog, QA scorecards, architecture, and behind-the-scenes of how this profile stays updated.',
     '',
   ].join('\n');
 
@@ -409,7 +409,7 @@ function generateProfileReadme(_repos: SourceRepo[]) {
     '  <a href="https://github.com/nelgoez"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>',
     '  <a href="mailto:gomeznahuel@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>',
     '  <a href="https://wa.link/mtf64p"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>',
-    '  <a href="https://nelthor.qzz.io"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>',
+    '  <a href="https://nelthor.com.ar"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>',
     '</p>',
     '',
     '---',

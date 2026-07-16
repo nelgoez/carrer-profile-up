@@ -43,7 +43,7 @@ career-profile-up/
 │   ├── generate-readme.ts      GitHub profile README generator
 │   └── health/                 Health check tooling
 │
-├── nelthor.qzz.io/             Portfolio landing page (Next.js SSG)
+├── nelthor.com.ar/             Portfolio landing page (Next.js SSG)
 ├── docs/                       Design specs, methodology
 ├── AGENTS.md                   AI agent interface
 └── CLAUDE.md                   AI persistent memory

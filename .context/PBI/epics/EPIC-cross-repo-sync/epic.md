@@ -60,7 +60,7 @@ sync-all.ts (the brain)
 |---|---|
 | `scripts/sync-all.ts` | Unified sync script (phases A-D) |
 | `.github/workflows/sync-all.yml` | Orchestrator: repo_dispatch + cron + manual |
-| `nelthor.qzz.io/content/projects/_projects.json` | Auto-generated project manifest consumed by site |
+| `nelthor.com.ar/content/projects/_projects.json` | Auto-generated project manifest consumed by site |
 | `docs/cross-repo-sync.md` | Runbook: how to add a new source repo |
 
 ### MODIFIED files in career-profile-up
@@ -68,7 +68,7 @@ sync-all.ts (the brain)
 | File | Change |
 |---|---|
 | `scripts/generate-readme.ts` | Refactored as Phase C of sync-all.ts (or retired) |
-| `nelthor.qzz.io/components/projects-section.tsx` | Fallback to _projects.json when API fails, or use manifest for thumbnails |
+| `nelthor.com.ar/components/projects-section.tsx` | Fallback to _projects.json when API fails, or use manifest for thumbnails |
 | `.github/workflows/update-github-profile.yml` | Fixed write-to-root bug, or replaced by sync-all.yml |
 
 ### NEW files in each source repo (bunkai, DTS, UNC, etc.)
@@ -189,7 +189,7 @@ After Phase 3, the profile gets these new sections (data sourced from portfolio)
 | Skills (unified badges) | `components/translated-home.tsx` + `messages/en.json` |
 | Work Timeline | `components/timeline.tsx` |
 | Impact Metrics | `components/impact-metrics.tsx` |
-| QA Evidence Links | `app/qa/page.tsx` → link to nelthor.qzz.io/qa |
+| QA Evidence Links | `app/qa/page.tsx` → link to nelthor.com.ar/qa |
 | "Built with Agentic Dev" callout | How this pipeline works |
 
 ### Phase 5: Template + Social Post (boxed for later)

@@ -1,6 +1,6 @@
 # agentic-diplo-track-sys
 
-> **Agentic dev boilerplate** — From PRD to staging deploy, driven by AI skills. Built and maintained by [Nahuel Gomez](https://nelthor.qzz.io).
+> **Agentic dev boilerplate** — From PRD to staging deploy, driven by AI skills. Built and maintained by [Nahuel Gomez](https://nelthor.com.ar).
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.0-000000?logo=bun&logoColor=white)](https://bun.sh/)
@@ -39,7 +39,7 @@ cd <your-repo-name>
 
 ## Related
 
-- [Portfolio](https://nelthor.qzz.io) — Nahuel Gomez, Agentic QA Engineer
+- [Portfolio](https://nelthor.com.ar) — Nahuel Gomez, Agentic QA Engineer
 - [bunkai-qa-engineering](https://github.com/nelgoez/bunkai-qa-engineering) — QA automation framework (companion repo)
 - [career-profile-up](https://github.com/nelgoez/career-profile-up) — career command center
 

@@ -48,7 +48,7 @@ export function EvidenceShowcase() {
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
                   <span className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
-                  <span className="ml-2 text-[11px] text-[var(--color-text-muted)] font-mono">nelthor.qzz.io</span>
+                  <span className="ml-2 text-[11px] text-[var(--color-text-muted)] font-mono">nelthor.com.ar</span>
                 </div>
                 <div className="aspect-video overflow-hidden bg-[var(--color-bg)]">
                   <img

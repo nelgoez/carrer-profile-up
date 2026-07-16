@@ -5,7 +5,7 @@
 
 ## Context
 
-Portfolio nelthor.qzz.io needed Spanish language support for local recruiters while keeping technical blog content in English for global reach.
+Portfolio nelthor.com.ar needed Spanish language support for local recruiters while keeping technical blog content in English for global reach.
 
 ## Decision
 

@@ -1,6 +1,6 @@
 # bunkai-qa-engineering
 
-> **AI-powered QA automation framework** — Playwright + TypeScript, KATA architecture, Jira/Xray integration. Built and maintained by [Nahuel Gomez](https://nelthor.qzz.io).
+> **AI-powered QA automation framework** — Playwright + TypeScript, KATA architecture, Jira/Xray integration. Built and maintained by [Nahuel Gomez](https://nelthor.com.ar).
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-latest-45ba4b?logo=playwright&logoColor=white)](https://playwright.dev/)
@@ -40,7 +40,7 @@ bun run test           # run full suite
 
 ## Related
 
-- [Portfolio](https://nelthor.qzz.io) — Nahuel Gomez, Agentic QA Engineer
+- [Portfolio](https://nelthor.com.ar) — Nahuel Gomez, Agentic QA Engineer
 - [agentic-diplo-track-sys](https://github.com/nelgoez/agentic-diplo-track-sys) — dev workflow boilerplate (companion repo)
 - [career-profile-up](https://github.com/nelgoez/career-profile-up) — career command center
 

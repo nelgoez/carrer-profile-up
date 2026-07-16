@@ -10,7 +10,7 @@ QA Engineer / SDET with 4+ years architecting automation at Newfold Digital — 
 
 Now specializing in **Agentic Quality Engineering** — integrating AI-driven workflows into the testing lifecycle. Building predictive, autonomous quality systems that work alongside AI agents.
 
-Portfolio → nelthor.qzz.io
+Portfolio → nelthor.com.ar
 
 Stack: TypeScript, JavaScript, Python, Node.js · WebdriverIO, Robot Framework, Playwright, Cucumber, Selenium · CI/CD, GitHub Actions, Jenkins
 

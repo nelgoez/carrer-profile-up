@@ -11,10 +11,10 @@ export const metadata = {
   openGraph: {
     title: 'Nahuel Gomez — Agentic QA Engineer',
     description: 'QA Automation Engineer | Backend Dev | TypeScript & Python',
-    url: 'https://nelthor.qzz.io',
-    siteName: 'nelthor.qzz.io',
+    url: 'https://nelthor.com.ar',
+    siteName: 'nelthor.com.ar',
     type: 'website',
-    images: [{ url: 'https://nelthor.qzz.io/og-image.png', width: 1200, height: 630 }],
+    images: [{ url: 'https://nelthor.com.ar/og-image.png', width: 1200, height: 630 }],
   },
 };
 

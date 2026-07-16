@@ -3,7 +3,7 @@
 > **Internal planning document.** Draft posts below are public-ready content.
 >
 > **Positioning:** SDET → Agentic QA Engineer | Backend Dev | TypeScript & Python  
-> **Domain:** nelthor.qzz.io (live portfolio)  
+> **Domain:** nelthor.com.ar (live portfolio)  
 > **Target audience:** Recruiters, QA peers, engineering managers, AI/automation enthusiasts
 
 ---
@@ -25,11 +25,11 @@
 > • ⚙️ 2025: Built agentic QA platform (KATA architecture) with Supabase + Playwright — AI plans tests, I approve and review
 > • 🎓 2025: Developed diploma tracking system with RLS-secured Supabase backend + Moodle integration
 > • 📈 2025: Expanded food-app test coverage 40% → 78% with Jest + Playwright E2E critical paths
-> • 🚀 2026: Launched career portfolio at nelthor.qzz.io — built via agentic dev workflows, now a free GitHub template
+> • 🚀 2026: Launched career portfolio at nelthor.com.ar — built via agentic dev workflows, now a free GitHub template
 >
 > The biggest unlock? Realizing that **test automation is not about recording scripts — it's about designing systems that find bugs faster than humans can think of them.**
 >
-> I just launched my portfolio at nelthor.qzz.io — built entirely with AI agents.
+> I just launched my portfolio at nelthor.com.ar — built entirely with AI agents.
 >
 > What I didn't expect: it turned into something other people can use too.
 >
@@ -57,7 +57,7 @@
 >
 > The tools change fast. The fundamentals don't.
 >
-> Attach: nelthor.qzz.io/ai-testing-strategies.svg
+> Attach: nelthor.com.ar/ai-testing-strategies.svg
 >
 > #SoftwareTesting #AITesting #QA #TestAutomation #LLM
 
@@ -66,7 +66,7 @@
 > I spent the last week building my career portfolio — and an AI agent did 80% of the coding.
 >
 > Here's the stack:
-> • Next.js 15 (static export) → nelthor.qzz.io
+> • Next.js 15 (static export) → nelthor.com.ar
 > • Tailwind CSS 4 for styling
 > • GitHub Pages for hosting
 > • Free domain via DigitalPlat (qzz.io)
@@ -80,7 +80,7 @@
 >
 > This is what "Agentic QA Engineer" means to me — not replacing engineers, but shifting the work from **writing code** to **directing quality**.
 >
-> Check it out: nelthor.qzz.io
+> Check it out: nelthor.com.ar
 >
 > #AgenticDev #Portfolio #NextJS #CareerGrowth
 
@@ -108,7 +108,7 @@
 
 ### Post 5 — Behind the scenes / meta
 
-> This portfolio (nelthor.qzz.io) was built using agentic development workflows.
+> This portfolio (nelthor.com.ar) was built using agentic development workflows.
 >
 > Behind every deployed feature:
 > • AI agent planned the implementation

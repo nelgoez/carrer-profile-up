@@ -149,7 +149,7 @@ export default function BehindTheScenesPage() {
         <h2 className="text-2xl font-bold mb-6">This Portfolio — Built with Agentic Workflows</h2>
         <div className="p-6 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)]">
           <p className="text-[var(--color-text-muted)] mb-4">
-            Everything you see on nelthor.qzz.io was planned, built, reviewed, and deployed using the
+            Everything you see on nelthor.com.ar was planned, built, reviewed, and deployed using the
             agentic-dev workflow. The process:
           </p>
           <ol className="space-y-2 text-sm text-[var(--color-text-muted)] list-decimal list-inside">

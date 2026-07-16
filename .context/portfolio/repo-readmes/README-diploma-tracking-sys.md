@@ -1,6 +1,6 @@
 # diploma-tracking-sys
 
-> **Full-stack academic diploma tracking platform** — Supabase + Next.js + Hono API. Built and maintained by [Nahuel Gomez](https://nelthor.qzz.io).
+> **Full-stack academic diploma tracking platform** — Supabase + Next.js + Hono API. Built and maintained by [Nahuel Gomez](https://nelthor.com.ar).
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.0-000000?logo=bun&logoColor=white)](https://bun.sh/)
@@ -38,7 +38,7 @@ One-click demo mode at `https://diplomatrackingsystem.qzz.io/` — mock data, no
 
 ## Related
 
-- [Portfolio](https://nelthor.qzz.io) — Nahuel Gomez, Agentic QA Engineer
+- [Portfolio](https://nelthor.com.ar) — Nahuel Gomez, Agentic QA Engineer
 - [agentic-diplo-track-sys](https://github.com/nelgoez/agentic-diplo-track-sys) — dev workflow hub (companion repo)
 - [bunkai-qa-engineering](https://github.com/nelgoez/bunkai-qa-engineering) — QA automation framework
 

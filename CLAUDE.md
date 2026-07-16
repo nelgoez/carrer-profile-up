@@ -3,7 +3,7 @@
 > AI memory. Loads EVERY session. Heavy detail → skill `references/`. Project values → `.agents/project.yaml`. Scripts → READ `package.json`.
 >
 > **Project path**: `D:\Nahuel\Proyectos\career-profile-up`
-> **Portfolio domain**: `nelthor.qzz.io`
+> **Portfolio domain**: `nelthor.com.ar`
 > **GitHub handle**: `nelgoez`
 > **Session log**: `.session/sprint-development/startup.md`
 

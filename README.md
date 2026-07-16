@@ -20,7 +20,7 @@
 <h1>Nahuel Gomez — Career Profile</h1>
 
 <p>
-  <a href="https://nelthor.qzz.io"><b>nelthor.qzz.io</b></a> ·
+  <a href="https://nelthor.com.ar"><b>nelthor.com.ar</b></a> ·
   <a href="https://linkedin.com/in/nelgoez">LinkedIn</a> ·
   <a href="https://github.com/nelgoez">GitHub</a> ·
   <a href="https://wa.link/mtf64p">WhatsApp</a>
@@ -52,7 +52,7 @@ Two ways to use this repo:
 
 ## Portfolio
 
-**→ [nelthor.qzz.io](https://nelthor.qzz.io)** — live portfolio built with Next.js, deployed to GitHub Pages.
+**→ [nelthor.com.ar](https://nelthor.com.ar)** — live portfolio built with Next.js, deployed to GitHub Pages.
 
 | Section | What you'll find |
 |---------|-----------------|
@@ -139,7 +139,7 @@ GitHub Actions builds and deploys automatically. Your site will be at `https://<
 
 | Directory | What's inside |
 |-----------|---------------|
-| `nelthor.qzz.io/` | The portfolio website (Next.js app) |
+| `nelthor.com.ar/` | The portfolio website (Next.js app) |
 | `scripts/` | Health checks, README generator for GitHub profile |
 | `.claude/skills/` | Reusable AI workflow skills for Claude/OpenCode users |
 | `.context/` | Design specs, content plans, media assets |
@@ -197,8 +197,8 @@ bun install                  # install dependencies
 cp .env.example .env         # create env file (edit as needed)
 bun run generate:readme      # auto-generate GitHub profile README
 bun run health:check         # run portfolio health checks
-cd nelthor.qzz.io && bun run dev  # start dev server (preview)
-cd nelthor.qzz.io && bun run build # build for production
+cd nelthor.com.ar && bun run dev  # start dev server (preview)
+cd nelthor.com.ar && bun run build # build for production
 ```
 
 ---

@@ -12,7 +12,7 @@ Transform `career-profile-up` (currently a bare agentic-dev-boilerplate) into a 
 
 1. **Orchestrates** Nahuel's professional presence across platforms (GitHub, LinkedIn, Outlier)
 2. **Auto-generates** a dynamic GitHub Profile README (`nelgoez/nelgoez`) with live metrics
-3. **Hosts** a portfolio landing page (`nelthor.qzz.io`) as a full-stack showcase
+3. **Hosts** a portfolio landing page (`nelthor.com.ar`) as a full-stack showcase
 4. **Demonstrates** the agentic-dev workflow itself — the boilerplate skills become the delivery mechanism, proving Nahuel's "Agentic QA Engineer" positioning
 5. **Showcases** the full spectrum of capability — from traditional manual craftsmanship (Newfold Digital era) to cutting-edge agentic development — via a "Behind the Scenes" section with screenshots, recordings, and architecture diagrams
 
@@ -36,11 +36,11 @@ career-profile-up (LOCAL — not published)
 └── .claude/skills/           ← Boilerplate skills used for orchestration
      ├── /project-foundation  → Portfolio PRD
      ├── /product-management  → Backlog of portfolio improvements
-     └── /sprint-development  → Ship features for nelthor.qzz.io
+     └── /sprint-development  → Ship features for nelthor.com.ar
 
 === PUBLIC FACING ===
 
-nelthor.qzz.io (Vercel)         ← Portfolio landing page, blog, live project data
+nelthor.com.ar (Vercel)         ← Portfolio landing page, blog, live project data
 github.com/nelgoez/nelgoez  ← Auto-generated profile README
 ```
 
@@ -51,7 +51,7 @@ github.com/nelgoez/nelgoez  ← Auto-generated profile README
 | Landing page framework | Next.js Static Export | Free on Vercel, no backend needed, best DX |
 | Content source | Local markdown + GitHub API | No CMS dependency, always synced with repos |
 | Profile README update | GitHub Actions (cron daily) | Industry standard, zero infra |
-| Domain | nelthor.qzz.io | Short, professional, own brand |
+| Domain | nelthor.com.ar | Short, professional, own brand |
 | Boilerplate usage | Orchestration layer only | Repurpose skills, don't fight them |
 
 ---
@@ -100,7 +100,7 @@ git commit + push (only if changed)
 
 ---
 
-## 4. Component: Landing Page (nelthor.qzz.io)
+## 4. Component: Landing Page (nelthor.com.ar)
 
 ### 4.1 Stack
 
@@ -109,7 +109,7 @@ git commit + push (only if changed)
 - **Data**: GitHub REST API (client-side fetch with SWR/fetch)
 - **Content**: Local MDX for blog posts
 - **Deploy**: Vercel (free tier, custom domain)
-- **Domain**: nelthor.qzz.io (purchased via Vercel or Namecheap)
+- **Domain**: nelthor.com.ar (purchased via Vercel or Namecheap)
 
 ### 4.2 Sections
 
@@ -158,7 +158,7 @@ git commit + push (only if changed)
 
 ### 4.4 Blog/Tutorials
 
-- Content: `.mdx` files in `nelthor.qzz.io/content/blog/`
+- Content: `.mdx` files in `nelthor.com.ar/content/blog/`
 - Categories: Agentic QA, Test Automation, Career, Tutorials
 - Frontmatter: `title`, `date`, `tags`, `description`
 - Generation: `getStaticProps` reads all MDX at build time
@@ -205,7 +205,7 @@ A dedicated page/section showing **the process** — not just what was built, bu
 | Jira boards (screenshots) | Both eras | Sprint planning, traceability, workflows | Behind the Scenes |
 | Diff comparisons | Code commits | Before/after refactors, traditional vs AI-generated | Blog articles |
 
-**Pro tip:** Keep a `media/` folder under `.context/portfolio/media/` with organized raw assets. An `.assets/` manifest JSON tracks captions, dates, and which section each asset belongs to. Reuse across GitHub README (SVG/static images via `raw.githubusercontent.com`) and nelthor.qzz.io (optimized via Next.js Image).
+**Pro tip:** Keep a `media/` folder under `.context/portfolio/media/` with organized raw assets. An `.assets/` manifest JSON tracks captions, dates, and which section each asset belongs to. Reuse across GitHub README (SVG/static images via `raw.githubusercontent.com`) and nelthor.com.ar (optimized via Next.js Image).
 
 ---
 
@@ -308,7 +308,7 @@ The boilerplate is **not just infrastructure** — it's a living demo:
 | Skill | How it maps to the portfolio |
 |-------|------------------------------|
 | `/project-foundation` | Define "Nahuel's Career as a Product" — PRD with goals, audience, KPIs |
-| `/design-system` | Design tokens for nelthor.qzz.io (colors, typography, spacing) |
+| `/design-system` | Design tokens for nelthor.com.ar (colors, typography, spacing) |
 | `/project-bootstrap` | Scaffold the Next.js landing page |
 | `/product-management` | Maintain backlog of portfolio improvements as epics/stories |
 | `/sprint-development` | Implement each feature: profile automator, blog, live metrics |
@@ -327,7 +327,7 @@ The boilerplate is **not just infrastructure** — it's a living demo:
 3. **🔥 Recent activity** — auto-generated from last 5 updated repos
 4. **Tech stack** — grouped badges (Testing / Backend / Tools / Cloud)
 5. **Stats widget** — `github-readme-stats` card
-6. **📝 Latest blog** — auto-pulled from nelthor.qzz.io/blog RSS
+6. **📝 Latest blog** — auto-pulled from nelthor.com.ar/blog RSS
 7. **Contact** — email, LinkedIn, WhatsApp
 
 ### 8.2 Blog Topics (initial batch)
@@ -355,7 +355,7 @@ A lightweight JSON manifest tracks all media assets used across the portfolio:
       "era": "traditional",
       "caption": "Cucumber + TypeScript test framework layer diagram",
       "tags": ["framework", "cucumber", "typescript", "architecture"],
-      "used_in": ["nelthor.qzz.io/behind-the-scenes", "github-readme"],
+      "used_in": ["nelthor.com.ar/behind-the-scenes", "github-readme"],
       "file": "nd-cucumber-arch.png",
       "alt_text": "Architecture diagram of Cucumber BDD framework with Page Object layers"
     },
@@ -366,7 +366,7 @@ A lightweight JSON manifest tracks all media assets used across the portfolio:
       "era": "agentic",
       "caption": "KATA architecture — Component → Action → Test with AI agent dispatch",
       "tags": ["kata", "agentic", "architecture", "framework"],
-      "used_in": ["nelthor.qzz.io/behind-the-scenes", "blog/kata-guide"],
+      "used_in": ["nelthor.com.ar/behind-the-scenes", "blog/kata-guide"],
       "file": "kata-agentic-flow.svg",
       "alt_text": "Flow diagram showing KATA layers with AI skill dispatch points"
     }
@@ -391,12 +391,12 @@ The manifest is source-of-truth. A build script (`scripts/build-media-index.ts`)
 | GitHub profile views/week | ? | +200% |
 | LinkedIn profile views/week | ? | +150% |
 | Inbound recruiter messages/month | ? | ≥ 5 |
-| nelthor.qzz.io unique visitors/month | N/A | ≥ 500 |
+| nelthor.com.ar unique visitors/month | N/A | ≥ 500 |
 | Blog articles published | 0 | ≥ 4 |
 | Media assets in manifest | 0 | ≥ 10 (mix of traditional + agentic) |
 | Behind the Scenes section live | No | Yes, with ≥ 6 media assets |
 | Profile README freshness | Static | Daily auto-update |
-| Pages on nelthor.qzz.io | 0 | ≥ 5 (home, projects, blog, behind-the-scenes, contact) |
+| Pages on nelthor.com.ar | 0 | ≥ 5 (home, projects, blog, behind-the-scenes, contact) |
 | Health checks passing | N/A | 4/4 green |
 
 ---

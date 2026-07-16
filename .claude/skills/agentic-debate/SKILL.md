@@ -135,7 +135,7 @@ Present findings. Wait for user choice before implementing.
 
 ## Example
 
-Decision: Multilanguage support for portfolio (nelthor.qzz.io)
+Decision: Multilanguage support for portfolio (nelthor.com.ar)
 - Mode: Multi-agent (3 agents)
 - Opción A: Solo español en UI, blog en inglés
 - Opción B: next-intl completo, todo bilingüe

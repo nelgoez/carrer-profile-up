@@ -16,7 +16,7 @@
 
 ## Acceptance Criteria
 
-- [ ] `nelthor.qzz.io/content/blog/` contains `.mdx` files with frontmatter (title, date, description, tags, slug)
+- [ ] `nelthor.com.ar/content/blog/` contains `.mdx` files with frontmatter (title, date, description, tags, slug)
 - [ ] Blog listing page reads from MDX files instead of hardcoded JS
 - [ ] Blog detail page renders MDX content with proper formatting (headings, code blocks, images)
 - [ ] `generateStaticParams` works for all `.mdx` files
