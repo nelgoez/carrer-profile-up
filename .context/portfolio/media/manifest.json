@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "assets": [
     {
       "id": "screenshots-homepage-hero",
@@ -234,6 +234,41 @@
       "used_in": []
     },
     {
+      "id": "unc-agentic-dev-reports-admin-explore-02-mod3-edit-mode",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/admin-explore/02-mod3-edit-mode.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-admin-explore-01-course-edit-mode-full",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/admin-explore/01-course-edit-mode-full.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-admin-explore-06-mod3-full-admin",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/admin-explore/06-mod3-full-admin.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-admin-explore-02-mod3-admin-full",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/admin-explore/02-mod3-admin-full.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-admin-explore-01-course-edit-mode",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/admin-explore/01-course-edit-mode.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
       "id": "unc-agentic-dev-reports-audit-course-269-section-4",
       "type": "screenshot",
       "file": "unc-agentic-dev/reports/audit/course-269-section-4.png",
@@ -241,9 +276,44 @@
       "used_in": []
     },
     {
+      "id": "unc-agentic-dev-reports-audit-cas-state",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/cas-state.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-audit-cas-before-submit",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/cas-before-submit.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
       "id": "unc-agentic-dev-reports-audit-course-269-section-3",
       "type": "screenshot",
       "file": "unc-agentic-dev/reports/audit/course-269-section-3.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-audit-course-269-student-section-3",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/course-269-student-section-3.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-audit-course-269-student-section-4",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/course-269-student-section-4.png",
+      "alt_text": "",
+      "used_in": []
+    },
+    {
+      "id": "unc-agentic-dev-reports-audit-cas-after-submit",
+      "type": "screenshot",
+      "file": "unc-agentic-dev/reports/audit/cas-after-submit.png",
       "alt_text": "",
       "used_in": []
     },
